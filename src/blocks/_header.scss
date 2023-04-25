@@ -1,0 +1,114 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+  }
+
+  &__logo {
+    display: block;
+    margin-right: 17px;
+    width: 65px;
+    transition: scale .4s ease;
+    animation: spin 10s infinite linear;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+
+  &__txt {
+    margin: 0;
+    color: #62C7FF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__cart {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #2D63D8;
+    transition: all .4s ease;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+
+    &:hover {
+      background: none;
+      background-color: #fff;
+      border-color: #62C7FF;
+      color: #2D63D8;
+    }
+
+    &:hover .header__line {
+      border-color: #2D63D8;
+    }
+
+    &:hover .header__cart-img {
+      background-image: url(../images/cart-img-hover.png);
+    }
+  }
+
+  &__cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 23px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dust {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/Dust.png) no-repeat center / contain;
+  }
+
+  &__line {
+    border-left: 1px solid #fff;
+    width: 1px;
+    height: 25px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+  &__cart-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background: url(../images/cart-img.png) no-repeat center / contain;
+  }
+
+}
