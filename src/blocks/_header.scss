@@ -13,6 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #62c8ff46;
+  margin-bottom: 25px;
 
   &__link {
     display: flex;
@@ -56,24 +59,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    background-color: #2D63D8;
+    background-color: #E56C0A;
     transition: all .4s ease;
     border: 1px solid transparent;
     box-sizing: border-box;
 
     &:hover {
       background: none;
-      background-color: #fff;
-      border-color: #62C7FF;
-      color: #2D63D8;
-    }
-
-    &:hover .header__line {
-      border-color: #2D63D8;
-    }
-
-    &:hover .header__cart-img {
-      background-image: url(../images/cart-img-hover.png);
+      background-color: #743807;
+      border-color: #E56C0A;
     }
   }
 

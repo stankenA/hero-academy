@@ -2,6 +2,15 @@ import React from 'react';
 import './blocks/app.scss';
 import galaxy from './images/Galaxy.svg';
 
+import UE from './images/UE-icon.png';
+import SOPH from './images/soph-icon.png';
+import UC from './images/uc-icon.png';
+import RIFT from './images/rift-icon.png';
+import CRAV from './images/crav-icon.png';
+import LUM from './images/lum-icon.png';
+import UNF from './images/unf-icon.png';
+import VAULT from './images/vault-icon.png';
+
 export default function App() {
   return (
     <div className="page">
@@ -32,20 +41,38 @@ export default function App() {
           <section className="heroes">
             <div className="heroes__top">
               <ul className="factions list">
-                <li className="factions__name">United Empire</li>
-                <li className="factions__name">Sophons</li>
-                <li className="factions__name">Umbral Choir</li>
-                <li className="factions__name">Riftborns</li>
-                <li className="factions__name">Cravers</li>
-                <li className="factions__name">Lumeris</li>
-                <li className="factions__name">Unfallen</li>
-                <li className="factions__name">Vaulters</li>
+                <li className="factions__option factions__option_active factions__option_all">
+                  All
+                </li>
+                <li className="factions__option factions__option_ue">
+                  United Empire <img src={UE} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_soph">
+                  Sophons <img src={SOPH} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_uc">
+                  Umbral Choir <img src={UC} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_rift">
+                  Riftborns <img src={RIFT} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_crav">
+                  Cravers <img src={CRAV} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_lum">
+                  Lumeris <img src={LUM} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_unf">
+                  Unfallen <img src={UNF} alt="faction icon" className="factions__icon" />
+                </li>
+                <li className="factions__option factions__option_vault">
+                  Vaulters <img src={VAULT} alt="faction icon" className="factions__icon" />
+                </li>
               </ul>
               <div className="sort">
                 <p className="sort__txt">
-                  Sort by:
+                  Sort by: <span className="sort__selected">influence</span>
                 </p>
-                <span className="sort__selected">influence</span>
                 <ul className="sort__list list">
                   <li className="sort__option">influence</li>
                   <li className="sort__option">price</li>
