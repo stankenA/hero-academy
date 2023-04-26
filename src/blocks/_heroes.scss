@@ -2,6 +2,23 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0 0 35px;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 65px;
   }
 }
