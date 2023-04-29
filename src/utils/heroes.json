@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "name": "Asaroenni Dzulmaran",
+    "heroImage": "https://sun9-14.userapi.com/impg/FaJfbXF5W0dTIXo5aPuhiQ7F8Ami0rIp3wulcw/8dq8uTMloII.jpg?size=180x240&quality=96&sign=8e5092838e5549bf856afe9bca489617&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      20,
+      50
+    ],
+    "price": 550,
+    "category": 0,
+    "influence": 2
+  },
+  {
+    "id": 1,
+    "name": "Hanmharla Gerzi",
+    "heroImage": "https://sun9-78.userapi.com/impg/RjMDYUXZ9MCHR6KfXdHA2J4Xpm5S1IKpXnsQew/agxAfVOR3kM.jpg?size=180x240&quality=96&sign=007329a7465537c58403fd032096e493&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      20,
+      50
+    ],
+    "price": 750,
+    "category": 0,
+    "influence": 4
+  },
+  {
+    "id": 2,
+    "name": "Fahemmn Nutharr",
+    "heroImage": "https://sun9-40.userapi.com/impg/DhiJj_C9lAtimJOWot8uTIgj31PF_tDJ0y1qaw/0wwJzPAWww4.jpg?size=180x240&quality=96&sign=63fe36ee9de47daa352cde50ad8a49b9&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      20,
+      50
+    ],
+    "price": 950,
+    "category": 0,
+    "influence": 4
+  }
+]

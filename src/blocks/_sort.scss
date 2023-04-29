@@ -33,6 +33,9 @@
   }
 
   &__selected {
+    display: inline-block;
+    border-bottom: 1px dotted #62C7FF;
+    padding-bottom: 2px;
     color: #62C7FF;
   }
 

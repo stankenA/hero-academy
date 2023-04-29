@@ -12,7 +12,7 @@ export const factionsArr = [
     name: 'All',
   },
   {
-    name: 'Untided Empire',
+    name: 'United Empire',
     icon: UE,
   },
   {
