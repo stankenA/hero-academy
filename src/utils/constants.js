@@ -1,11 +1,11 @@
-import UE from '../images/UE-icon.png';
-import SOPH from '../images/soph-icon.png';
-import UC from '../images/uc-icon.png';
-import RIFT from '../images/rift-icon.png';
-import CRAV from '../images/crav-icon.png';
-import LUM from '../images/lum-icon.png';
-import UNF from '../images/unf-icon.png';
-import VAULT from '../images/vault-icon.png';
+import ue from '../images/UE-icon.png';
+import soph from '../images/soph-icon.png';
+import uc from '../images/uc-icon.png';
+import rift from '../images/rift-icon.png';
+import crav from '../images/crav-icon.png';
+import lum from '../images/lum-icon.png';
+import unf from '../images/unf-icon.png';
+import vault from '../images/vault-icon.png';
 
 export const factionsArr = [
   {
@@ -13,34 +13,34 @@ export const factionsArr = [
   },
   {
     name: 'United Empire',
-    icon: UE,
+    icon: ue,
   },
   {
     name: 'Sophons',
-    icon: SOPH,
+    icon: soph,
   },
   {
     name: 'Umbral Choir',
-    icon: UC,
+    icon: uc,
   },
   {
     name: 'Riftborns',
-    icon: RIFT,
+    icon: rift,
   },
   {
     name: 'Cravers',
-    icon: CRAV,
+    icon: crav,
   },
   {
     name: 'Lumeris',
-    icon: LUM,
+    icon: lum,
   },
   {
     name: 'Unfallen',
-    icon: UNF,
+    icon: unf,
   },
   {
     name: 'Vaulters',
-    icon: VAULT,
+    icon: vault,
   },
 ];
