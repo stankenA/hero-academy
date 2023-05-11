@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './blocks/app.scss';
 
 import Header from './components/Header';
@@ -6,9 +6,18 @@ import Factions from './components/Factions';
 import Sort from './components/Sort';
 import Hero from './components/Hero';
 
-import heroesList from './utils/heroes.json';
+// import heroesList from './utils/heroes.json';
 
 export default function App() {
+
+  const [heroes, setHeroes] = useState([]);
+
+  useEffect(() => {
+    fetch('https://645d3679e01ac610589fc7ea.mockapi.io/heroes')
+      .then((res) => res.json())
+      .then((res) => setHeroes(res))
+  }, []);
+
   return (
     <div className="page">
       <div className="wrapper">
@@ -22,7 +31,7 @@ export default function App() {
             <div className="heroes__content">
               <h2 className="heroes__title">All heroes</h2>
               <ul className="heroes__list list">
-                {heroesList.map((hero) =>
+                {heroes.map((hero) =>
                   <Hero
                     {...hero}
                     key={hero.id}
