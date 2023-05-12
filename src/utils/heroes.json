@@ -47,5 +47,70 @@
     "price": 950,
     "category": 0,
     "influence": 4
+  },
+  {
+    "id": 3,
+    "name": "Immah Naratya",
+    "heroImage": "https://sun9-51.userapi.com/impg/drOrLtZzf5wgvUBtBrC7FVhAPurpFKdKeRrmEw/AMps7kyEL7g.jpg?size=180x240&quality=96&sign=f8f434de652a8d9e40f5205d0ed87ec2&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "price": 550,
+    "category": 0,
+    "influence": 8
+  },
+  {
+    "id": 4,
+    "name": "Dominik Havanen",
+    "heroImage": "https://sun9-75.userapi.com/impg/sODoN8qBsA07-udJNWR0H4o2xDJrOqcyLo7cGA/lV3qi3lFhbo.jpg?size=180x240&quality=96&sign=46ffb3ea43ca5815d46b24e013465a02&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "price": 750,
+    "category": 0,
+    "influence": 7
+  },
+  {
+    "id": 5,
+    "name": "Oleg Lagarin",
+    "heroImage": "https://sun9-62.userapi.com/impg/JJaX4KQiK1LtEpy-g3keUuNBdsnuy1z1NbBJuw/Ct2wmQpYIUc.jpg?size=180x240&quality=96&sign=8f1c07e32cbb420f009ed8ca5c16a636&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "price": 850,
+    "category": 0,
+    "influence": 10
+  },
+  {
+    "id": 6,
+    "name": "Dmitri Lenko",
+    "heroImage": "https://sun9-18.userapi.com/impg/R8AI4TRcbQImxg-7A9q0FUciLpsfbaPPLv1xRA/9C5bXNzOXSA.jpg?size=180x240&quality=96&sign=72c1f5ed4d62c6d9f66b23ccc9d203ff&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "price": 1050,
+    "category": 0,
+    "influence": 12
   }
 ]
