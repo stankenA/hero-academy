@@ -1,10 +1,12 @@
 import React from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+
 import galaxy from '../images/Galaxy.svg';
 
 export default function Header() {
   return (
     <header className="header">
-      <a href="#" className="header__link">
+      <NavLink to="/" className="header__link">
         <img src={galaxy} alt="logo" className="header__logo" />
         <div className="header__container">
           <h1 className="header__title">Hero Academy</h1>
@@ -12,8 +14,8 @@ export default function Header() {
             Recruit the best heroes in the galaxy!
           </p>
         </div>
-      </a>
-      <a href="#" className="header__cart">
+      </NavLink>
+      <NavLink to="/cart" className="header__cart">
         <div className="header__cart-content">
           <div className="header__price">
             <span className="header__price-number">520</span>
@@ -23,7 +25,7 @@ export default function Header() {
           <span className="header__cart-img"></span>
           <span className="header__counter">3</span>
         </div>
-      </a>
+      </NavLink>
     </header>
   )
 }
