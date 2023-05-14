@@ -1,0 +1,51 @@
+import React from 'react';
+
+import img from '../images/Galaxy.svg';
+
+export default function Cart() {
+  return (
+    <section className="cart">
+      <div className="cart__top">
+        <div className="cart__cart">
+          <span className="cart__icon"></span>
+          <h2 className="cart__title">Heroes cart</h2>
+        </div>
+        <button type="button" className="cart__clear-button button">
+          <span className="cart__clear-icon"></span> Clear cart
+        </button>
+      </div>
+      <div className="cart__content">
+        <ul className="cart__list list">
+          <li className="cart__item">
+            <img src={img} alt="Hero" className="cart__img" />
+            <div className="cart__info">
+              <h3 className="cart__item-title">Hero name here</h3>
+              <span className="cart__item-descr">Some description here</span>
+            </div>
+            <div className="cart__counter">
+              <button type="button" className="cart__counter-button button">-</button>
+              <span className="cart__counter-number">1</span>
+              <button type="button" className="cart__counter-button button">+</button>
+            </div>
+            <span className="cart__sum">770</span>
+            <button type="button" className="cart__clear-item button">x</button>
+          </li>
+          <li className="cart__item">
+            <img src={img} alt="Hero" className="cart__img" />
+            <div className="cart__info">
+              <h3 className="cart__item-title">Hero name here</h3>
+              <span className="cart__item-descr">Some description here</span>
+            </div>
+            <div className="cart__counter">
+              <button type="button" className="cart__counter-button button">-</button>
+              <span className="cart__counter-number">1</span>
+              <button type="button" className="cart__counter-button button">+</button>
+            </div>
+            <span className="cart__sum">770</span>
+            <button type="button" className="cart__clear-item button">x</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  )
+}

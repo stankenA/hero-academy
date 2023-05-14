@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, Route, Routes } from 'react-router-dom';
 
 import galaxy from '../images/Galaxy.svg';
 
@@ -15,17 +15,22 @@ export default function Header() {
           </p>
         </div>
       </NavLink>
-      <NavLink to="/cart" className="header__cart">
-        <div className="header__cart-content">
-          <div className="header__price">
-            <span className="header__price-number">520</span>
-            <span className="header__dust"></span>
-          </div>
-          <span className="header__line"></span>
-          <span className="header__cart-img"></span>
-          <span className="header__counter">3</span>
-        </div>
-      </NavLink>
+      <Routes>
+        <Route path='/' element={
+          <NavLink to="/cart" className="header__cart">
+            <div className="header__cart-content">
+              <div className="header__price">
+                <span className="header__price-number">520</span>
+                <span className="header__dust"></span>
+              </div>
+              <span className="header__line"></span>
+              <span className="header__cart-img"></span>
+              <span className="header__counter">3</span>
+            </div>
+          </NavLink>
+        }>
+        </Route>
+      </Routes>
     </header>
   )
 }

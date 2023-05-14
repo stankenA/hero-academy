@@ -3,9 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import './blocks/app.scss';
 
 import Header from './components/Header';
-import Home from './pages/Home';
-import Cart from './pages/Cart';
-import NotFound from './pages/NotFound';
+import HomePage from './pages/HomePage';
+import CartPage from './pages/CartPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
 
@@ -15,9 +15,9 @@ export default function App() {
         <Header />
         <main className="main">
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='*' element={<NotFound />} />
+            <Route path='/' element={<HomePage />} />
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </main>
       </div>

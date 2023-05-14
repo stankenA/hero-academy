@@ -1,0 +1,157 @@
+.cart {
+  width: 820px;
+  margin: 94px auto 0;
+
+  &__top {
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #62c8ff46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    background: url(../images/cart-img-orange.png) no-repeat center / contain;
+  }
+
+  &__title {
+    color: #E56C0A;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  &__clear-button {
+    display: flex;
+    gap: 6px;
+    color: #62c8ff46;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__clear-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/trash-icon.svg) no-repeat center / contain;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #62c8ff46;
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 15px;
+  }
+
+  &__info {
+    margin-right: 68px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0 0 3px;
+  }
+
+  &__item-descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: .6;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__counter-button {
+    color: #E56C0A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #E56C0A;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 23px;
+    padding-bottom: 3px;
+  }
+
+  &__counter-number {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__sum {
+    display: flex;
+    margin: 0 93px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fec100;
+
+    &:after {
+      content: '';
+      width: 25px;
+      height: 25px;
+      display: block;
+      background: url(../images/Dust.png) no-repeat center / contain;
+      margin-left: 7px;
+    }
+  }
+
+  &__clear-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #62c8ff46;
+    color: #62c8ff46;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 4px;
+    transition: all .4s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

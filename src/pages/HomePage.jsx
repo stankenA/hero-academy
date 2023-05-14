@@ -5,7 +5,7 @@ import Sort from '../components/Sort';
 import HeroLoader from '../components/HeroeLoader';
 import Hero from '../components/Hero';
 
-export default function Home() {
+export default function HomePage() {
 
   const [heroes, setHeroes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
