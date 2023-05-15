@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import img from '../images/Galaxy.svg';
 
@@ -45,6 +46,22 @@ export default function Cart() {
             <button type="button" className="cart__clear-item button">x</button>
           </li>
         </ul>
+      </div>
+      <div className="cart__bottom">
+        <div className="cart__amount">
+          <p className="cart__txt">
+            Hero number: <span className="cart__hero-number">10</span>
+          </p>
+          <p className="cart__txt">
+            Total dust: <span className="cart__total-dust">100</span>
+          </p>
+        </div>
+        <div className="cart__buttons">
+          <NavLink to="/" className="cart__back">
+            <span className="cart__back-arrow">Go back</span>
+          </NavLink>
+          <button className="cart__pay button">Pay now</button>
+        </div>
       </div>
     </section>
   )
