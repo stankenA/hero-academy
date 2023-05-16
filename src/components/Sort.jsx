@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-export default function Sort() {
+export default function Sort({ selectedSort, onSort }) {
   const sortArr = ['influence', 'price', 'alphabet'];
 
   const [isSortOpened, setIsSortOpened] = useState(false);
-  const [selectedSort, setSelectedSort] = useState(sortArr[0]);
+
+  console.log(selectedSort);
 
   return (
     <div className="sort">
@@ -19,7 +20,7 @@ export default function Sort() {
           <li
             key={sortType}
             className={`sort__option ${sortType === selectedSort ? 'sort__option_active' : ''}`}
-            onClick={() => setSelectedSort(sortType)}
+            onClick={() => onSort(sortType)}
           >
             {sortType}
           </li>
