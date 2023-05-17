@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { factionsArr } from '../utils/constants';
 
-export default function Factions() {
-
-  const [selectedFaction, setSelectedFaction] = useState(0);
+export default function Factions({ selectedFaction, onFactionSelect }) {
 
   return (
     <ul className="factions list">
-      {factionsArr.map((faction, index) => (
+      {factionsArr.map((faction) => (
         <li
-          className={`factions__option ${index === selectedFaction ? 'factions__option_active' : ''}`}
+          className={`factions__option ${faction.name === selectedFaction ? 'factions__option_active' : ''}`}
           key={faction.name}
-          onClick={() => setSelectedFaction(index)}
+          onClick={() => onFactionSelect(faction.name)}
         >
           {faction.name}
           {faction.icon

@@ -12,8 +12,8 @@
       5,
       18
     ],
+    "faction": "Sophons",
     "price": 550,
-    "category": 0,
     "influence": 2
   },
   {
@@ -28,8 +28,8 @@
       5,
       18
     ],
+    "faction": "Sophons",
     "price": 750,
-    "category": 0,
     "influence": 4
   },
   {
@@ -44,8 +44,8 @@
       5,
       18
     ],
+    "faction": "Sophons",
     "price": 950,
-    "category": 0,
     "influence": 4
   },
   {
@@ -60,8 +60,8 @@
       5,
       18
     ],
+    "faction": "United Empire",
     "price": 550,
-    "category": 0,
     "influence": 8
   },
   {
@@ -77,8 +77,8 @@
       5,
       18
     ],
+    "faction": "United Empire",
     "price": 750,
-    "category": 0,
     "influence": 7
   },
   {
@@ -93,8 +93,8 @@
       5,
       18
     ],
+    "faction": "United Empire",
     "price": 850,
-    "category": 0,
     "influence": 10
   },
   {
@@ -109,8 +109,8 @@
       5,
       18
     ],
+    "faction": "United Empire",
     "price": 1050,
-    "category": 0,
     "influence": 12
   }
 ]

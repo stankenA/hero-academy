@@ -5,8 +5,6 @@ export default function Sort({ selectedSort, onSort }) {
 
   const [isSortOpened, setIsSortOpened] = useState(false);
 
-  console.log(selectedSort);
-
   return (
     <div className="sort">
       <p className="sort__txt" onClick={() => setIsSortOpened(!isSortOpened)}>

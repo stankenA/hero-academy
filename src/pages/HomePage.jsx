@@ -11,29 +11,42 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   const [selectedSort, setSelectedSort] = useState('influence');
-  // const [selectedFraction, setSelectedFracion] = useState('All');
+  const [selectedFaction, setSelectedFacion] = useState('All');
+
+  console.log(selectedFaction)
 
   function setSort(sort) {
     setSelectedSort(sort);
   }
 
+  function setFaction(faction) {
+    setSelectedFacion(faction);
+  }
+
   useEffect(() => {
     setIsLoading(true);
 
-    fetch(`https://645d3679e01ac610589fc7ea.mockapi.io/heroes?sortBy=${selectedSort === 'alphabet' ? 'name' : selectedSort}&order=${selectedSort === 'alphabet' ? 'asc' : 'desc'}`)
+    const baseUrl = 'https://645d3679e01ac610589fc7ea.mockapi.io/heroes?';
+    const sort = 'sortBy=' + (selectedSort === 'alphabet' ? 'name' : selectedSort);
+    const order = '&order=' + (selectedSort === 'alphabet' ? 'asc' : 'desc');
+    const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
+
+    fetch(baseUrl + sort + order + faction)
       .then((res) => res.json())
       .then((res) => {
         setHeroes(res)
         setIsLoading(false);
-        console.log(res);
       })
       .catch((err) => console.log(err));
-  }, [selectedSort]);
+  }, [selectedSort, selectedFaction]);
 
   return (
     <section className="heroes">
       <div className="heroes__top">
-        <Factions />
+        <Factions
+          selectedFaction={selectedFaction}
+          onFactionSelect={setFaction}
+        />
         <Sort
           selectedSort={selectedSort}
           onSort={setSort}
