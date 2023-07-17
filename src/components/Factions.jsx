@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { factionsArr } from '../utils/constants';
 
 export default function Factions({ selectedFaction, onFactionSelect }) {

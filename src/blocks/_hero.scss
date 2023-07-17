@@ -31,6 +31,9 @@
     width: 100%;
     background: rgb(34 69 91);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   &__type {
@@ -39,6 +42,7 @@
     height: 32px;
     width: 100%;
     margin-bottom: 7px;
+    @include reset-list;
   }
 
   &__type-option {
@@ -73,6 +77,7 @@
     justify-content: space-between;
     height: 32px;
     width: 100%;
+    @include reset-list;
   }
 
   &__lvl {

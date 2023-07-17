@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink, Route, Routes } from 'react-router-dom';
 
 import galaxy from '../images/Galaxy.svg';
+import Search from './Search';
 
-export default function Header() {
+export default function Header({ searchValue, setSearchValue }) {
   return (
     <header className="header">
       <NavLink to="/" className="header__link">
@@ -17,17 +18,20 @@ export default function Header() {
       </NavLink>
       <Routes>
         <Route path='/' element={
-          <NavLink to="/cart" className="header__cart">
-            <div className="header__cart-content">
-              <div className="header__price">
-                <span className="header__price-number">520</span>
-                <span className="header__dust"></span>
+          <>
+            <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+            <NavLink to="/cart" className="header__cart">
+              <div className="header__cart-content">
+                <div className="header__price">
+                  <span className="header__price-number">520</span>
+                  <span className="header__dust"></span>
+                </div>
+                <span className="header__line"></span>
+                <span className="header__cart-img"></span>
+                <span className="header__counter">3</span>
               </div>
-              <span className="header__line"></span>
-              <span className="header__cart-img"></span>
-              <span className="header__counter">3</span>
-            </div>
-          </NavLink>
+            </NavLink>
+          </>
         }>
         </Route>
       </Routes>

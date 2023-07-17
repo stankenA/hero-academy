@@ -44,3 +44,5 @@ export const factionsArr = [
     icon: vault,
   },
 ];
+
+export const sortArr = ['influence', 'price', 'alphabet'];

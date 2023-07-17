@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
+import { sortArr } from '../utils/constants';
+
 export default function Sort({ selectedSort, onSort }) {
-  const sortArr = ['influence', 'price', 'alphabet'];
 
   const [isSortOpened, setIsSortOpened] = useState(false);
 

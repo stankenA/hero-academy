@@ -5,6 +5,7 @@
   max-width: 65%;
   column-gap: 9px;
   row-gap: 5px;
+  @include reset-list;
 
   @media screen and (max-width: 767px) {
     max-width: 100%;

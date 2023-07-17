@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './blocks/app.scss';
 
@@ -9,13 +9,15 @@ import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
 
+  const [searchValue, setSearchValue] = useState('');
+
   return (
     <div className="page">
       <div className="wrapper">
-        <Header />
+        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
         <main className="main">
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route path='/' element={<HomePage searchValue={searchValue} />} />
             <Route path='/cart' element={<CartPage />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>

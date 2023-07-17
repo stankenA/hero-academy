@@ -2,18 +2,16 @@ import React, { useState, useEffect } from 'react';
 
 import Factions from '../components/Factions';
 import Sort from '../components/Sort';
-import HeroLoader from '../components/HeroeLoader';
+import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
 
-export default function HomePage() {
+export default function HomePage({ searchValue }) {
 
   const [heroes, setHeroes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const [selectedSort, setSelectedSort] = useState('influence');
   const [selectedFaction, setSelectedFacion] = useState('All');
-
-  console.log(selectedFaction)
 
   function setSort(sort) {
     setSelectedSort(sort);
@@ -30,15 +28,16 @@ export default function HomePage() {
     const sort = 'sortBy=' + (selectedSort === 'alphabet' ? 'name' : selectedSort);
     const order = '&order=' + (selectedSort === 'alphabet' ? 'asc' : 'desc');
     const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
+    const search = searchValue ? `&search=${searchValue}` : '';
 
-    fetch(baseUrl + sort + order + faction)
+    fetch(baseUrl + sort + order + faction + search)
       .then((res) => res.json())
       .then((res) => {
         setHeroes(res)
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-  }, [selectedSort, selectedFaction]);
+  }, [selectedSort, selectedFaction, searchValue]);
 
   return (
     <section className="heroes">
@@ -57,7 +56,7 @@ export default function HomePage() {
         <ul className="heroes__list list">
           {
             isLoading
-              ? [...new Array(6)].map((el, i) => <HeroLoader key={i} />)
+              ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
               : heroes.map((hero) =>
                 <Hero
                   key={hero.id}

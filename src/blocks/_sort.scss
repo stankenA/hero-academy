@@ -13,6 +13,7 @@
   }
 
   &__list {
+    @include reset-list;
     padding-top: 13px;
     padding-bottom: 13px;
     border-radius: 10px;

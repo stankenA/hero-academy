@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url(../vendor/normalize.css);
 
-@import url(./_page.scss);
-@import url(./_wrapper.scss);
-@import url(./common/_list.scss);
-@import url(./common/_button.scss);
+@import './page';
+@import './wrapper';
+@import '../utils/variables';
+@import '../utils/mixins';
 
-@import url(./_header.scss);
-@import url(./_heroes.scss);
-@import url(./_factions.scss);
-@import url(./_sort.scss);
-@import url(./_hero.scss);
-@import url(./_cart.scss);
+@import './header';
+@import './heroes';
+@import './factions';
+@import './sort';
+@import './hero';
+@import './cart';
+@import './search';
