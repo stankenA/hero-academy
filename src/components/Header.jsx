@@ -4,7 +4,7 @@ import { NavLink, Route, Routes } from 'react-router-dom';
 import galaxy from '../images/Galaxy.svg';
 import Search from './Search';
 
-export default function Header({ searchValue, setSearchValue }) {
+export default function Header() {
   return (
     <header className="header">
       <NavLink to="/" className="header__link">
@@ -19,7 +19,7 @@ export default function Header({ searchValue, setSearchValue }) {
       <Routes>
         <Route path='/' element={
           <>
-            <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+            <Search />
             <NavLink to="/cart" className="header__cart">
               <div className="header__cart-content">
                 <div className="header__price">

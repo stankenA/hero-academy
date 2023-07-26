@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import Factions from '../components/Factions';
 import Sort from '../components/Sort';
 import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
+import { SearchContext } from '../contexts/SearchContext';
 
-export default function HomePage({ searchValue }) {
+export default function HomePage() {
+
+  const { searchValue } = useContext(SearchContext);
 
   const [heroes, setHeroes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

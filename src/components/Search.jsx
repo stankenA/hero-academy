@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SearchContext } from '../contexts/SearchContext';
 
-export default function Search({ searchValue, setSearchValue }) {
+export default function Search() {
+
+  const { searchValue, setSearchValue } = useContext(SearchContext);
+
   return (
     <div className="search">
       <input

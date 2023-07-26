@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { SearchContext } from './contexts/SearchContext';
 
 export default function App() {
 
@@ -14,14 +15,16 @@ export default function App() {
   return (
     <div className="page">
       <div className="wrapper">
-        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
-        <main className="main">
-          <Routes>
-            <Route path='/' element={<HomePage searchValue={searchValue} />} />
-            <Route path='/cart' element={<CartPage />} />
-            <Route path='*' element={<NotFoundPage />} />
-          </Routes>
-        </main>
+        <SearchContext.Provider value={{ searchValue, setSearchValue }}>
+          <Header />
+          <main className="main">
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/cart' element={<CartPage />} />
+              <Route path='*' element={<NotFoundPage />} />
+            </Routes>
+          </main>
+        </SearchContext.Provider>
       </div>
     </div>
   )
