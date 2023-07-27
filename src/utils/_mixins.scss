@@ -12,6 +12,8 @@
 @mixin reset-button {
   background-color: transparent;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin transition($time: .4s) {

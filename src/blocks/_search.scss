@@ -17,4 +17,21 @@
     &:focus-visible {}
   }
 
+  &__clear {
+    @include reset-button;
+    display: block;
+    width: 49px;
+    height: 49px;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
 }

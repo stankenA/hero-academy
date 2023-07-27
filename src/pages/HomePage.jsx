@@ -6,6 +6,7 @@ import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
 
 import { useSelector } from 'react-redux';
+import axios from 'axios';
 
 export default function HomePage() {
 
@@ -24,13 +25,17 @@ export default function HomePage() {
     const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
     const search = searchValue ? `&search=${searchValue}` : '';
 
-    fetch(baseUrl + sort + order + search + faction)
-      .then((res) => res.json())
-      .then((res) => {
-        setHeroes(res)
+    async function fetchHeroes() {
+      try {
+        const res = await axios.get(baseUrl + sort + order + search + faction);
+        setHeroes(res.data);
         setIsLoading(false);
-      })
-      .catch((err) => console.log(err));
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchHeroes();
   }, [selectedSort, selectedFaction, searchValue]);
 
   return (

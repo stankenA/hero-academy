@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { setSearchValue } from '../redux/slices/filterSlice';
@@ -8,8 +8,15 @@ export default function Search() {
   const dispatch = useDispatch();
   const searchValue = useSelector(state => state.filter.searchValue);
 
+  const searchInput = useRef();
+
   function changeSearchValue(evt) {
     dispatch(setSearchValue(evt.target.value))
+  }
+
+  function clearSearchValue() {
+    dispatch(setSearchValue(''));
+    searchInput.current.focus();
   }
 
   return (
@@ -20,8 +27,15 @@ export default function Search() {
         placeholder="Search your hero..."
         onChange={changeSearchValue}
         value={searchValue}
+        ref={searchInput}
       />
-      {/* <img src="" alt="" className="search__icon" /> */}
+      {searchValue
+        && <button
+          type="button"
+          className="search__clear"
+          onClick={clearSearchValue}
+        >&#215;</button>
+      }
     </div>
   )
 }
