@@ -1,9 +1,16 @@
-import React, { useContext } from 'react';
-import { SearchContext } from '../contexts/SearchContext';
+import React from 'react';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { setSearchValue } from '../redux/slices/filterSlice';
 
 export default function Search() {
 
-  const { searchValue, setSearchValue } = useContext(SearchContext);
+  const dispatch = useDispatch();
+  const searchValue = useSelector(state => state.filter.searchValue);
+
+  function changeSearchValue(evt) {
+    dispatch(setSearchValue(evt.target.value))
+  }
 
   return (
     <div className="search">
@@ -11,7 +18,7 @@ export default function Search() {
         type="text"
         className="search__input"
         placeholder="Search your hero..."
-        onChange={(evt) => setSearchValue(evt.target.value)}
+        onChange={changeSearchValue}
         value={searchValue}
       />
       {/* <img src="" alt="" className="search__icon" /> */}

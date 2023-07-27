@@ -1,7 +1,13 @@
 import React from 'react';
 import { factionsArr } from '../utils/constants';
 
-export default function Factions({ selectedFaction, onFactionSelect }) {
+import { useSelector, useDispatch } from 'react-redux';
+import { setSelectedFaction } from '../redux/slices/filterSlice';
+
+export default function Factions() {
+
+  const dispatch = useDispatch();
+  const selectedFaction = useSelector(state => state.filter.selectedFaction);
 
   return (
     <ul className="factions list">
@@ -9,7 +15,7 @@ export default function Factions({ selectedFaction, onFactionSelect }) {
         <li
           className={`factions__option ${faction.name === selectedFaction ? 'factions__option_active' : ''}`}
           key={faction.name}
-          onClick={() => onFactionSelect(faction.name)}
+          onClick={() => dispatch(setSelectedFaction(faction.name))}
         >
           {faction.name}
           {faction.icon

@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-
 import { sortArr } from '../utils/constants';
 
-export default function Sort({ selectedSort, onSort }) {
+import { useSelector, useDispatch } from 'react-redux';
+import { setSelectedSort } from '../redux/slices/filterSlice';
+
+export default function Sort() {
+
+  const dispatch = useDispatch();
+  const selectedSort = useSelector(state => state.filter.selectedSort);
 
   const [isSortOpened, setIsSortOpened] = useState(false);
 
@@ -19,7 +24,7 @@ export default function Sort({ selectedSort, onSort }) {
           <li
             key={sortType}
             className={`sort__option ${sortType === selectedSort ? 'sort__option_active' : ''}`}
-            onClick={() => onSort(sortType)}
+            onClick={() => dispatch(setSelectedSort(sortType))}
           >
             {sortType}
           </li>

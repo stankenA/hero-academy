@@ -1,28 +1,19 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Factions from '../components/Factions';
 import Sort from '../components/Sort';
 import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
-import { SearchContext } from '../contexts/SearchContext';
+
+import { useSelector } from 'react-redux';
 
 export default function HomePage() {
-
-  const { searchValue } = useContext(SearchContext);
 
   const [heroes, setHeroes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const [selectedSort, setSelectedSort] = useState('influence');
-  const [selectedFaction, setSelectedFacion] = useState('All');
-
-  function setSort(sort) {
-    setSelectedSort(sort);
-  }
-
-  function setFaction(faction) {
-    setSelectedFacion(faction);
-  }
+  // redux logic
+  const { selectedSort, selectedFaction, searchValue } = useSelector(state => state.filter);
 
   useEffect(() => {
     setIsLoading(true);
@@ -33,7 +24,7 @@ export default function HomePage() {
     const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
     const search = searchValue ? `&search=${searchValue}` : '';
 
-    fetch(baseUrl + sort + order + faction + search)
+    fetch(baseUrl + sort + order + search + faction)
       .then((res) => res.json())
       .then((res) => {
         setHeroes(res)
@@ -45,14 +36,8 @@ export default function HomePage() {
   return (
     <section className="heroes">
       <div className="heroes__top">
-        <Factions
-          selectedFaction={selectedFaction}
-          onFactionSelect={setFaction}
-        />
-        <Sort
-          selectedSort={selectedSort}
-          onSort={setSort}
-        />
+        <Factions />
+        <Sort />
       </div>
       <div className="heroes__content">
         <h2 className="heroes__title">All heroes</h2>
