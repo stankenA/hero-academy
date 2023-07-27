@@ -1,20 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setSearchValue } from '../redux/slices/filterSlice';
+import debounce from 'lodash.debounce';
 
 export default function Search() {
 
+  const [inputValue, setInputValue] = useState('');
+
   const dispatch = useDispatch();
-  const searchValue = useSelector(state => state.filter.searchValue);
 
   const searchInput = useRef();
 
+  const updateSearchValue = useCallback(
+    debounce((value) => {
+      dispatch(setSearchValue(value));
+      console.log('bruh');
+    }, 1000),
+    [])
+
   function changeSearchValue(evt) {
-    dispatch(setSearchValue(evt.target.value))
+    setInputValue(evt.target.value);
+    updateSearchValue(evt.target.value);
   }
 
   function clearSearchValue() {
+    setInputValue('');
     dispatch(setSearchValue(''));
     searchInput.current.focus();
   }
@@ -26,10 +37,10 @@ export default function Search() {
         className="search__input"
         placeholder="Search your hero..."
         onChange={changeSearchValue}
-        value={searchValue}
+        value={inputValue}
         ref={searchInput}
       />
-      {searchValue
+      {inputValue
         && <button
           type="button"
           className="search__clear"
