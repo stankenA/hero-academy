@@ -1,12 +1,13 @@
 import React, { useCallback, useRef, useState } from 'react';
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setSearchValue } from '../redux/slices/filterSlice';
 import debounce from 'lodash.debounce';
 
 export default function Search() {
 
-  const [inputValue, setInputValue] = useState('');
+  const { searchValue } = useSelector(state => state.filter);
+  const [inputValue, setInputValue] = useState(searchValue);
 
   const dispatch = useDispatch();
 
@@ -15,8 +16,7 @@ export default function Search() {
   const updateSearchValue = useCallback(
     debounce((value) => {
       dispatch(setSearchValue(value));
-      console.log('bruh');
-    }, 1000),
+    }, 500),
     [])
 
   function changeSearchValue(evt) {
