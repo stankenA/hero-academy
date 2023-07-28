@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hero-academy/static/css/main.0101ffbb.css",
-    "main.js": "/hero-academy/static/js/main.b2d2047f.js",
+    "main.js": "/hero-academy/static/js/main.ef45e1cb.js",
     "static/media/Galaxy.svg": "/hero-academy/static/media/Galaxy.dbaca25e395d2b235350ad733dccbb3c.svg",
     "static/media/trash-icon.svg": "/hero-academy/static/media/trash-icon.2fd36539fe3341675649.svg",
     "index.html": "/hero-academy/index.html",
     "static/media/plus-white.svg": "/hero-academy/static/media/plus-white.5c7a3ca30cd6b6ca749f.svg",
     "main.0101ffbb.css.map": "/hero-academy/static/css/main.0101ffbb.css.map",
-    "main.b2d2047f.js.map": "/hero-academy/static/js/main.b2d2047f.js.map"
+    "main.ef45e1cb.js.map": "/hero-academy/static/js/main.ef45e1cb.js.map"
   },
   "entrypoints": [
     "static/css/main.0101ffbb.css",
-    "static/js/main.b2d2047f.js"
+    "static/js/main.ef45e1cb.js"
   ]
 }
