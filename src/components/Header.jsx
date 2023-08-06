@@ -9,6 +9,8 @@ export default function Header() {
 
   const { items, totalPrice } = useSelector(state => state.cart);
 
+  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+
   return (
     <header className="header">
       <NavLink to="/" className="header__link">
@@ -32,7 +34,7 @@ export default function Header() {
                 </div>
                 <span className="header__line"></span>
                 <span className="header__cart-img"></span>
-                <span className="header__counter">{items.length}</span>
+                <span className="header__counter">{totalCount}</span>
               </div>
             </NavLink>
           </>

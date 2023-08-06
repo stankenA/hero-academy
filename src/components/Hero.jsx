@@ -7,6 +7,7 @@ export default function Hero({ name, price, heroImage, lvls, types, id }) {
   const dispatch = useDispatch();
 
   const heroTypes = ['Guardian', 'Overseer'];
+  const heroLvls = [1, 5, 18];
 
   const [activeType, setActiveType] = useState(0);
   const [activeLvl, setActiveLvl] = useState(0);
@@ -14,14 +15,14 @@ export default function Hero({ name, price, heroImage, lvls, types, id }) {
   const addedItem = useSelector((state) => state.cart.items.find((item) => item.id === id));
   const count = addedItem ? addedItem.count : 0;
 
-  const onClickAdd = () => {
+  function onClickAdd() {
     const item = {
       id,
       name,
       price,
-      heroImage,
+      img: heroImage,
       type: heroTypes[activeType],
-      lvl: activeLvl,
+      lvl: heroLvls[activeLvl],
     };
 
     dispatch(addItem(item));
