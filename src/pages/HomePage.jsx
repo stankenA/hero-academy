@@ -24,23 +24,23 @@ export default function HomePage() {
   const { selectedSort, selectedFaction, searchValue } = useSelector(state => state.filter);
 
   // достаём URL параметры
-  useEffect(() => {
-    if (window.location.search) {
-      const params = qs.parse(window.location.search.substring(1));
-      dispatch(setFilters(params));
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.search) {
+  //     const params = qs.parse(window.location.search.substring(1));
+  //     dispatch(setFilters(params));
+  //   }
+  // }, []);
 
   // // сохраняем данные фильтрации в адресной строке
-  useEffect(() => {
-    const queryString = qs.stringify({
-      sort: selectedSort,
-      faction: selectedFaction,
-      search: searchValue,
-    });
+  // useEffect(() => {
+  //   const queryString = qs.stringify({
+  //     sort: selectedSort,
+  //     faction: selectedFaction,
+  //     search: searchValue,
+  //   });
 
-    navigate(`?${queryString}`);
-  }, [selectedSort, selectedFaction, searchValue]);
+  //   navigate(`?${queryString}`);
+  // }, [selectedSort, selectedFaction, searchValue]);
 
 
   useEffect(() => {

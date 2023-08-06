@@ -30,6 +30,7 @@
   }
 
   &__clear-button {
+    @include reset-button;
     display: flex;
     gap: 6px;
     color: #62c8ff46;
@@ -94,6 +95,7 @@
   }
 
   &__counter-button {
+    @include reset-button;
     color: #E56C0A;
     display: flex;
     align-items: center;
@@ -107,6 +109,11 @@
     font-weight: 700;
     font-size: 23px;
     padding-bottom: 3px;
+    @include transition;
+
+    &:hover {
+      background-color: #291403;
+    }
   }
 
   &__counter-number {
@@ -135,6 +142,7 @@
   }
 
   &__clear-item {
+    @include reset-button;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,12 +154,12 @@
     color: #62c8ff46;
     cursor: pointer;
     font-weight: 700;
-    font-size: 17px;
-    padding-bottom: 4px;
+    font-size: 26px;
     transition: all .4s ease;
 
     &:hover {
       opacity: .7;
+      transform: rotate(180deg);
     }
   }
 

@@ -1,11 +1,31 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem } from '../redux/slices/cartSlice';
 
-export default function Hero({ name, price, heroImage, lvls, types }) {
+export default function Hero({ name, price, heroImage, lvls, types, id }) {
+
+  const dispatch = useDispatch();
 
   const heroTypes = ['Guardian', 'Overseer'];
 
   const [activeType, setActiveType] = useState(0);
   const [activeLvl, setActiveLvl] = useState(0);
+
+  const addedItem = useSelector((state) => state.cart.items.find((item) => item.id === id));
+  const count = addedItem ? addedItem.count : 0;
+
+  const onClickAdd = () => {
+    const item = {
+      id,
+      name,
+      price,
+      heroImage,
+      type: heroTypes[activeType],
+      lvl: activeLvl,
+    };
+
+    dispatch(addItem(item));
+  }
 
   return (
     <li className="hero">
@@ -48,10 +68,10 @@ export default function Hero({ name, price, heroImage, lvls, types }) {
           <span className="hero__price-number">{price}</span>
           <span className="hero__price-dust"></span>
         </div>
-        <button className="hero__add button">
+        <button className="hero__add button" onClick={onClickAdd}>
           <span className="hero__add-plus"></span>
           <p className="hero__add-txt">Recruit </p>
-          <span className="hero__add-counter">0</span>
+          {count ? <span className="hero__add-counter">{count}</span> : ''}
         </button>
       </div>
     </li>
