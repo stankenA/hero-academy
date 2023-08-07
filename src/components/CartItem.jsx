@@ -36,7 +36,7 @@ export default function CartItem({ id, name, type, lvl, price, img, count }) {
       <div className="cart__counter">
         <button
           type="button"
-          className="cart__counter-button button"
+          className={`cart__counter-button button ${isDecrementDisabled ? 'cart__counter-button_disabled' : ''}`}
           disabled={isDecrementDisabled}
           onClick={onDecrement}
         >-</button>

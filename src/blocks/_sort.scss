@@ -17,7 +17,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
     border-radius: 10px;
-    background-color: #313044;
+    background-color: var(--secondary);
     width: 132px;
     position: absolute;
     bottom: -140px;
@@ -34,9 +34,9 @@
 
   &__selected {
     display: inline-block;
-    border-bottom: 1px dotted #62C7FF;
+    border-bottom: 1px dotted var(--accent);
     padding-bottom: 2px;
-    color: #62C7FF;
+    color: var(--accent);
   }
 
   &__option {
@@ -53,12 +53,12 @@
     transition: all .4s ease;
 
     &:hover {
-      background-color: #403e58;
+      background-color: var(--secondary-light);
     }
 
     &_active {
-      color: #62C7FF;
-      background-color: #403e58;
+      color: var(--accent);
+      background-color: var(--secondary-light);
     }
   }
 }

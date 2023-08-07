@@ -4,17 +4,21 @@
 
   &__input {
     width: 100%;
-    border: 2px solid #1b1b1b;
+    border: 2px solid var(--border);
     box-sizing: border-box;
-    background-color: #313044;
+    background-color: var(--secondary);
     border-radius: 15px;
     padding: 5px 14px;
     font-size: 18px;
     line-height: 18px;
-    color: #fff;
+    color: var(--accent);
     min-height: 49px;
+    @include transition;
 
-    &:focus-visible {}
+    &:focus-visible {
+      background-color: var(--secondary-light);
+      outline: none;
+    }
   }
 
   &__clear {

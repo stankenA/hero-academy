@@ -1,6 +1,6 @@
 .wrapper {
-  background: #202738;
-  border: 2px solid #62C7FF;
+  background: var(--background);
+  border: 2px solid var(--border);
   border-radius: 40px;
   width: 90%;
   margin-top: 100px;
@@ -11,5 +11,6 @@
 
   @media screen and (max-width: 767px) {
     padding: 33px 31px 45px;
+    margin-top: 40px;
   }
 }

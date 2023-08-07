@@ -2,8 +2,8 @@
   width: 305px;
   box-sizing: border-box;
   padding: 10px 10px;
-  background: #202020;
-  border: 3px solid rgba(95, 164, 234, 0.9);
+  background: var(--secondary);
+  border: 3px solid var(--background);
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
     padding: 7px 5px;
     box-sizing: border-box;
     width: 100%;
-    background: rgb(34 69 91);
+    background: var(--background);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -58,17 +58,22 @@
     transition: all .4s ease;
     border-radius: 5px;
     box-sizing: border-box;
+    background: var(--secondary);
+    color: var(--text);
+    opacity: .7;
 
     &:hover {
-      background: #47809b;
+      background: var(--secondary-light);
+      color: var(--text);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      color: #fff;
+      opacity: 1;
     }
 
     &_active {
-      background: #47809b;
+      background: var(--secondary-light);
+      color: var(--text);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      color: #fff;
+      opacity: 1;
     }
   }
 
@@ -92,17 +97,22 @@
     border-radius: 5px;
     transition: all .4s ease;
     box-sizing: border-box;
+    background: var(--secondary);
+    color: var(--text);
+    opacity: .7;
 
     &:hover {
-      background: #47809b;
+      background: var(--secondary-light);
+      color: var(--text);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      color: #fff;
+      opacity: 1;
     }
 
     &_active {
-      background: #47809b;
+      background: var(--secondary-light);
+      color: var(--text);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      color: #fff;
+      opacity: 1;
     }
   }
 
@@ -140,22 +150,27 @@
     padding: 8px 18px;
     min-height: 42px;
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
-    background-color: #E56C0A;
+    border-radius: 15px;
+    background-color: var(--background);
     transition: all 0.4s ease;
     border: 1px solid transparent;
     box-sizing: border-box;
     transition: all .4s ease;
     cursor: pointer;
+    @include transition;
 
     &:hover {
-      background-color: #743807;
-      border-color: #E56C0A;
+      transform: translateY(-3px);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 
@@ -180,8 +195,8 @@
     min-height: 24px;
     box-sizing: border-box;
     padding: 4px;
-    border-radius: 50%;
-    background-color: #743807;
+    border-radius: 10px;
+    background-color: var(--accent);
     color: #ffffff;
     transition: all 0.4s ease;
   }

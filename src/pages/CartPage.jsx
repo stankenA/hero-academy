@@ -49,7 +49,7 @@ export default function CartPage() {
           <p className="cart__txt">
             Hero number: <span className="cart__hero-number">{totalCount}</span>
           </p>
-          <p className="cart__txt">
+          <p className="cart__txt cart__txt">
             Total dust: <span className="cart__total-dust">{totalPrice}</span>
           </p>
         </div>

@@ -19,22 +19,24 @@
     padding: 12px 18px;
     border-radius: 30px;
     font-weight: 700;
-    border: 2px solid #1b1b1b;
+    border: 2px solid var(--background);
     box-sizing: border-box;
-    background-color: #313044;
+    background-color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
     cursor: pointer;
-    transition: all .4s ease;
+    @include transition;
 
     &:hover {
-      background-color: #1B1B1B;
+      transform: translateY(-4px);
+      border-color: var(--border);
     }
 
     &_active {
-      background-color: #1B1B1B;
+      border-color: var(--accent);
+      background-color: var(--secondary-light);
     }
 
     @media screen and (max-width: 767px) {

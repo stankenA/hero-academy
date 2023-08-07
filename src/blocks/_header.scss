@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
-  border-bottom: 1px solid #62c8ff46;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 25px;
 
   @media screen and (max-width: 767px) {
@@ -38,7 +38,7 @@
   }
 
   &__title {
-    color: #fff;
+    color: var(--text);
     font-size: 32px;
     line-height: 29px;
     letter-spacing: 0.01em;
@@ -52,7 +52,7 @@
 
   &__txt {
     margin: 0;
-    color: #62C7FF;
+    color: var(--accent);
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -63,20 +63,20 @@
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    background-color: #E56C0A;
+    background-color: var(--secondary);
     transition: all .4s ease;
     border: 1px solid transparent;
     box-sizing: border-box;
 
     &:hover {
       background: none;
-      background-color: #743807;
-      border-color: #E56C0A;
+      background-color: var(--secondary);
+      border-color: var(--accent);
     }
 
     @media screen and (max-width: 767px) {

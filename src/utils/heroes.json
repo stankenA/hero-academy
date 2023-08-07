@@ -50,6 +50,22 @@
   },
   {
     "id": 3,
+    "name": "Uthassum Rhamoezz",
+    "heroImage": "https://sun9-30.userapi.com/impg/fssERG8FCGqnIHgMQoa-z_TZSk5_kpUiBbWfhQ/8egKbiWqJp8.jpg?size=180x240&quality=96&sign=faf6b266e77e3f39d6f4d9c3c525801f&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Sophons",
+    "price": 650,
+    "influence": 6
+  },
+  {
+    "id": 4,
     "name": "Immah Naratya",
     "heroImage": "https://sun9-51.userapi.com/impg/drOrLtZzf5wgvUBtBrC7FVhAPurpFKdKeRrmEw/AMps7kyEL7g.jpg?size=180x240&quality=96&sign=f8f434de652a8d9e40f5205d0ed87ec2&type=album",
     "types": [
@@ -65,7 +81,7 @@
     "influence": 8
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Dominik Havanen",
     "heroImage": "https://sun9-75.userapi.com/impg/sODoN8qBsA07-udJNWR0H4o2xDJrOqcyLo7cGA/lV3qi3lFhbo.jpg?size=180x240&quality=96&sign=46ffb3ea43ca5815d46b24e013465a02&type=album",
     "types": [
@@ -82,7 +98,7 @@
     "influence": 7
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Oleg Lagarin",
     "heroImage": "https://sun9-62.userapi.com/impg/JJaX4KQiK1LtEpy-g3keUuNBdsnuy1z1NbBJuw/Ct2wmQpYIUc.jpg?size=180x240&quality=96&sign=8f1c07e32cbb420f009ed8ca5c16a636&type=album",
     "types": [
@@ -98,7 +114,7 @@
     "influence": 10
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Dmitri Lenko",
     "heroImage": "https://sun9-18.userapi.com/impg/R8AI4TRcbQImxg-7A9q0FUciLpsfbaPPLv1xRA/9C5bXNzOXSA.jpg?size=180x240&quality=96&sign=72c1f5ed4d62c6d9f66b23ccc9d203ff&type=album",
     "types": [
@@ -112,5 +128,71 @@
     "faction": "United Empire",
     "price": 1050,
     "influence": 12
+  },
+  {
+    "id": 8,
+    "name": "Sila Minor",
+    "heroImage": "https://sun9-30.userapi.com/impg/x_VScbGBqSjx4NbmZ55KYB3c1M2GuqeyXwWX5A/zCm-_dnL1h8.jpg?size=180x240&quality=96&sign=6673d236d0cb7c4c4349a1f215fd4f44&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 1050,
+    "influence": 9
+  },
+  {
+    "id": 9,
+    "name": "Fasol Staccato",
+    "heroImage": "https://sun9-55.userapi.com/impg/CTRUaSxL3VlCa8Gw1AtNd1bmM8TA22FfNYIYBg/6YeQMERv-wE.jpg?size=180x240&quality=96&sign=b8866fec9bd3345b2dec4058826733cc&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 850,
+    "influence": 8
+  },
+  {
+    "id": 10,
+    "name": "Lare Fermata",
+    "heroImage": "https://sun9-55.userapi.com/impg/CTRUaSxL3VlCa8Gw1AtNd1bmM8TA22FfNYIYBg/6YeQMERv-wE.jpg?size=180x240&quality=96&sign=b8866fec9bd3345b2dec4058826733cc&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 600,
+    "influence": 12
+  },
+  {
+    "id": 11,
+    "name": "Miredo Sharp",
+    "heroImage": "https://sun9-23.userapi.com/impg/O-dS3hAIxi8rFycwE5SlJDnzAYQt2F82YhjDOw/7RxuWo77YGM.jpg?size=180x240&quality=96&sign=5ee711ef5cceed410ce2547eb533960b&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 1000,
+    "influence": 11
   }
 ]
