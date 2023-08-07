@@ -31,4 +31,4 @@
 
 ## Ссылки
 
-**Демо**: stankena.github.io/hero-academy
+**Демо**: https://stankena.github.io/hero-academy
