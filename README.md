@@ -1,7 +1,8 @@
 # Проект Hero Academy
 
 Представляет собой веб-приложение для вербовки различных героев. Вдохновлено видеоигрой "Endless Space 2" от Amplitude Studios
-**тут будет крутая картинка**
+![image](https://github.com/stankenA/hero-academy/assets/82235915/e194cf45-452f-47cb-833b-c5b7c890119c)
+
 
 ## Описание
 
