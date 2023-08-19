@@ -32,16 +32,25 @@
     &:hover {
       transform: translateY(-4px);
       border-color: var(--border);
+
+      @media screen and (max-width: 1023px) {
+        transform: translateY(0);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
     }
 
     &_active {
-      border-color: var(--accent);
+      border-color: var(--accent) !important;
       background-color: var(--secondary-light);
     }
 
     @media screen and (max-width: 767px) {
-      font-size: 15px;
-      padding: 8px 16px;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 16px;
     }
   }
 

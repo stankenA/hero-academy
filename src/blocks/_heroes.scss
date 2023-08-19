@@ -16,9 +16,16 @@
     font-size: 36px;
     line-height: 48px;
     margin: 0 0 35px;
+
+    &_error {
+      color: #CACACA;
+      text-align: center;
+      padding-top: 50px;
+    }
   }
 
   &__list {
+    @include reset-list;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

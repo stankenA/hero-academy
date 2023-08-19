@@ -72,18 +72,25 @@ export default function HomePage() {
         <Sort />
       </div>
       <div className="heroes__content">
-        <h2 className="heroes__title">All heroes</h2>
-        <ul className="heroes__list list">
-          {
-            isLoading
-              ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
-              : heroes.map((hero) =>
-                <Hero
-                  key={hero.id}
-                  {...hero}
-                />)
-          }
-        </ul>
+        {heroes.length !== 0
+          ? <>
+            <h2 className="heroes__title">All heroes</h2>
+            <ul className="heroes__list list">
+              {
+                isLoading
+                  ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
+                  : heroes.map((hero) =>
+                    <Hero
+                      key={hero.id}
+                      {...hero}
+                    />)
+              }
+            </ul>
+          </>
+          : <h2 className="heroes__title heroes__title_error">
+            {`No heroes? ( ͠° ͟ʖ ͡°)`}
+          </h2>
+        }
       </div>
     </section>
   )
