@@ -65,24 +65,26 @@ export default function HomePage() {
         <Sort />
       </div>
       <div className="heroes__content">
-        {<>
-          <h2 className="heroes__title">All heroes</h2>
-          <ul className="heroes__list list">
-            {status === 'loading'
-              ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
-              : status === 'success' && heroes.length !== 0
-                ?
-                heroes.map((hero) =>
-                  <Hero
-                    key={hero.id}
-                    {...hero}
-                  />)
+        <h2 className="heroes__title">All heroes</h2>
+        <ul className="heroes__list list">
+          {status === 'loading'
+            ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
+            : status === 'success' && heroes.length !== 0
+              ?
+              heroes.map((hero) =>
+                <Hero
+                  key={hero.id}
+                  {...hero}
+                />)
+              : status === 'error'
+                ? <h2 className="heroes__title heroes__title_error">
+                  {`Something went wrong`}
+                </h2>
                 : <h2 className="heroes__title heroes__title_error">
                   {`No heroes? ( ͠° ͟ʖ ͡°)`}
                 </h2>
-            }
-          </ul>
-        </>}
+          }
+        </ul>
       </div>
     </section>
   )
