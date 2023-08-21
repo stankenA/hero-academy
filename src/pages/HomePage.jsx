@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+
+// import { useNavigate } from 'react-router-dom';
+// import { setFilters } from '../redux/slices/filterSlice';
+// import qs from 'qs';
 
 import Factions from '../components/Factions';
 import Sort from '../components/Sort';
@@ -7,21 +10,18 @@ import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilters } from '../redux/slices/filterSlice';
 
-import axios from 'axios';
-import qs from 'qs';
+import { fetchHeroes } from '../redux/slices/heroesSlice';
 
 export default function HomePage() {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [heroes, setHeroes] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   // redux logic
   const { selectedSort, selectedFaction, searchValue } = useSelector(state => state.filter);
+  const { heroes, status } = useSelector(state => state.heroes);
 
   // достаём URL параметры
   // useEffect(() => {
@@ -44,25 +44,18 @@ export default function HomePage() {
 
 
   useEffect(() => {
-    async function fetchHeroes() {
-      setIsLoading(true);
+    async function getHeroes() {
 
       const baseUrl = 'https://645d3679e01ac610589fc7ea.mockapi.io/heroes?';
       const sort = 'sortBy=' + (selectedSort === 'alphabet' ? 'name' : selectedSort);
       const order = '&order=' + (selectedSort === 'alphabet' ? 'asc' : 'desc');
       const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
       const search = searchValue ? `&search=${searchValue}` : '';
-      try {
-        const res = await axios.get(baseUrl + sort + order + search + faction);
-        setHeroes(res.data);
-        setIsLoading(false);
 
-      } catch (error) {
-        console.log(error);
-      }
+      dispatch((fetchHeroes(baseUrl + sort + order + faction + search)));
     }
 
-    fetchHeroes();
+    getHeroes();
   }, [selectedSort, selectedFaction, searchValue]);
 
   return (
@@ -72,25 +65,24 @@ export default function HomePage() {
         <Sort />
       </div>
       <div className="heroes__content">
-        {heroes.length !== 0
-          ? <>
-            <h2 className="heroes__title">All heroes</h2>
-            <ul className="heroes__list list">
-              {
-                isLoading
-                  ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
-                  : heroes.map((hero) =>
-                    <Hero
-                      key={hero.id}
-                      {...hero}
-                    />)
-              }
-            </ul>
-          </>
-          : <h2 className="heroes__title heroes__title_error">
-            {`No heroes? ( ͠° ͟ʖ ͡°)`}
-          </h2>
-        }
+        {<>
+          <h2 className="heroes__title">All heroes</h2>
+          <ul className="heroes__list list">
+            {status === 'loading'
+              ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
+              : status === 'success' && heroes.length !== 0
+                ?
+                heroes.map((hero) =>
+                  <Hero
+                    key={hero.id}
+                    {...hero}
+                  />)
+                : <h2 className="heroes__title heroes__title_error">
+                  {`No heroes? ( ͠° ͟ʖ ͡°)`}
+                </h2>
+            }
+          </ul>
+        </>}
       </div>
     </section>
   )
