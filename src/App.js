@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ExtendedHero from './components/ExtendedHero';
 
 export default function App() {
 
@@ -17,6 +18,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/cart' element={<CartPage />} />
+            <Route path='/hero/:id' element={<ExtendedHero />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </main>

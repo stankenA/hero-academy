@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import CartItem from '../components/CartItem';
-import { clearItems } from '../redux/slices/cartSlice';
+import { clearItems, selectCart } from '../redux/slices/cartSlice';
 import CartEmpty from '../components/CartEmpty';
 
 export default function CartPage() {
@@ -13,7 +13,7 @@ export default function CartPage() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
-  const { totalPrice } = useSelector(state => state.cart);
+  const { totalPrice } = useSelector(selectCart);
 
   function clearCart() {
     dispatch(clearItems());

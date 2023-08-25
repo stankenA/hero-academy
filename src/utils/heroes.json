@@ -1,0 +1,523 @@
+[
+  {
+    "id": "0",
+    "name": "Asaroenni Dzulmaran",
+    "heroImage": "https://sun9-14.userapi.com/impg/FaJfbXF5W0dTIXo5aPuhiQ7F8Ami0rIp3wulcw/8dq8uTMloII.jpg?size=180x240&quality=96&sign=8e5092838e5549bf856afe9bca489617&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Sophons",
+    "price": 550,
+    "influence": 2
+  },
+  {
+    "id": "1",
+    "name": "Hanmharla Gerzi",
+    "heroImage": "https://sun9-78.userapi.com/impg/RjMDYUXZ9MCHR6KfXdHA2J4Xpm5S1IKpXnsQew/agxAfVOR3kM.jpg?size=180x240&quality=96&sign=007329a7465537c58403fd032096e493&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Sophons",
+    "price": 750,
+    "influence": 4
+  },
+  {
+    "id": "2",
+    "name": "Fahemmn Nutharr",
+    "heroImage": "https://sun9-40.userapi.com/impg/DhiJj_C9lAtimJOWot8uTIgj31PF_tDJ0y1qaw/0wwJzPAWww4.jpg?size=180x240&quality=96&sign=63fe36ee9de47daa352cde50ad8a49b9&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Sophons",
+    "price": 950,
+    "influence": 4
+  },
+  {
+    "id": "3",
+    "name": "Uthassum Rhamoezz",
+    "heroImage": "https://sun9-30.userapi.com/impg/fssERG8FCGqnIHgMQoa-z_TZSk5_kpUiBbWfhQ/8egKbiWqJp8.jpg?size=180x240&quality=96&sign=faf6b266e77e3f39d6f4d9c3c525801f&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Sophons",
+    "price": 650,
+    "influence": 6
+  },
+  {
+    "id": "4",
+    "name": "Immah Naratya",
+    "heroImage": "https://sun9-51.userapi.com/impg/drOrLtZzf5wgvUBtBrC7FVhAPurpFKdKeRrmEw/AMps7kyEL7g.jpg?size=180x240&quality=96&sign=f8f434de652a8d9e40f5205d0ed87ec2&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "United Empire",
+    "price": 550,
+    "influence": 8
+  },
+  {
+    "id": "5",
+    "name": "Dominik Havanen",
+    "heroImage": "https://sun9-75.userapi.com/impg/sODoN8qBsA07-udJNWR0H4o2xDJrOqcyLo7cGA/lV3qi3lFhbo.jpg?size=180x240&quality=96&sign=46ffb3ea43ca5815d46b24e013465a02&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "United Empire",
+    "price": 750,
+    "influence": 7
+  },
+  {
+    "id": "6",
+    "name": "Oleg Lagarin",
+    "heroImage": "https://sun9-62.userapi.com/impg/JJaX4KQiK1LtEpy-g3keUuNBdsnuy1z1NbBJuw/Ct2wmQpYIUc.jpg?size=180x240&quality=96&sign=8f1c07e32cbb420f009ed8ca5c16a636&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "United Empire",
+    "price": 850,
+    "influence": 10
+  },
+  {
+    "id": "7",
+    "name": "Dmitri Lenko",
+    "heroImage": "https://sun9-18.userapi.com/impg/R8AI4TRcbQImxg-7A9q0FUciLpsfbaPPLv1xRA/9C5bXNzOXSA.jpg?size=180x240&quality=96&sign=72c1f5ed4d62c6d9f66b23ccc9d203ff&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "United Empire",
+    "price": 1050,
+    "influence": 12
+  },
+  {
+    "id": "8",
+    "name": "Sila Minor",
+    "heroImage": "https://sun9-30.userapi.com/impg/x_VScbGBqSjx4NbmZ55KYB3c1M2GuqeyXwWX5A/zCm-_dnL1h8.jpg?size=180x240&quality=96&sign=6673d236d0cb7c4c4349a1f215fd4f44&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 1050,
+    "influence": 9
+  },
+  {
+    "id": "9",
+    "name": "Fasol Staccato",
+    "heroImage": "https://sun9-55.userapi.com/impg/CTRUaSxL3VlCa8Gw1AtNd1bmM8TA22FfNYIYBg/6YeQMERv-wE.jpg?size=180x240&quality=96&sign=b8866fec9bd3345b2dec4058826733cc&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 850,
+    "influence": 8
+  },
+  {
+    "id": "10",
+    "name": "Lare Fermata",
+    "heroImage": "https://sun9-55.userapi.com/impg/CTRUaSxL3VlCa8Gw1AtNd1bmM8TA22FfNYIYBg/6YeQMERv-wE.jpg?size=180x240&quality=96&sign=b8866fec9bd3345b2dec4058826733cc&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 600,
+    "influence": 12
+  },
+  {
+    "id": "11",
+    "name": "Miredo Sharp",
+    "heroImage": "https://sun9-23.userapi.com/impg/O-dS3hAIxi8rFycwE5SlJDnzAYQt2F82YhjDOw/7RxuWo77YGM.jpg?size=180x240&quality=96&sign=5ee711ef5cceed410ce2547eb533960b&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Umbral Choir",
+    "price": 1000,
+    "influence": 11
+  },
+  {
+    "id": "12",
+    "name": "e [epsilon]",
+    "heroImage": "https://sun9-62.userapi.com/impg/HmXEJUGHWK-LiQWQF2rjzj-NQnlxHPG9cT3_Kw/28puRWF0rWw.jpg?size=180x240&quality=96&sign=e45317332b7dcb58a9f872b96ea432a9&type=album",
+    "types": [
+      1,
+      2
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Riftborn",
+    "price": 930,
+    "influence": 7
+  },
+  {
+    "id": "13",
+    "name": "π [pi]",
+    "heroImage": "https://sun9-22.userapi.com/impg/U1eZb77EWwdUkv4BDdsdeHobTJQ9wzHWTHfk4g/ZqJmGRrI8Ew.jpg?size=180x240&quality=96&sign=397964b39b3f3cffa307ee404b540202&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Riftborn",
+    "price": 1020,
+    "influence": 8
+  },
+  {
+    "id": "14",
+    "name": "Σ [sum]",
+    "heroImage": "https://sun9-36.userapi.com/impg/m-QHwjJ_NPIwoQkp_-_whY4zvuQxu3oWckKiJw/Mi0phKkcEzc.jpg?size=180x240&quality=96&sign=94dbf367e5c4689944ed71f35a4362fd&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Riftborn",
+    "price": 970,
+    "influence": 2
+  },
+  {
+    "id": "15",
+    "name": "∂ [derivate]",
+    "heroImage": "https://sun9-27.userapi.com/impg/qXkbYGKJElkmfg8Ulaox8VApw9YPveoOBdmo3g/nsdGcDi-N3w.jpg?size=180x240&quality=96&sign=9b46116149c62067cdb4e6304caad918&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Riftborn",
+    "price": 890,
+    "influence": 6
+  },
+  {
+    "id": "16",
+    "name": "Baramaxa",
+    "heroImage": "https://sun9-54.userapi.com/impg/SYn-zCXB0VXIgNoxDLgZB_c_vcMQ_f0sALAWew/eXds4YNt1M8.jpg?size=180x240&quality=96&sign=035ac5d2b9cfb91a9514d2ad14cdad07&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Unfallen",
+    "price": 890,
+    "influence": 9
+  },
+  {
+    "id": "17",
+    "name": "Lunabarxes",
+    "heroImage": "https://sun9-77.userapi.com/impg/U9MkeXxolYlmz-O7-lc645ToJWqjimfkD5B2xw/uXPGFvJnQyA.jpg?size=180x240&quality=96&sign=9b8c9c8f49dbed5d30476e1028a56412&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Unfallen",
+    "price": 870,
+    "influence": 5
+  },
+  {
+    "id": "18",
+    "name": "Thustrellen",
+    "heroImage": "https://sun9-23.userapi.com/impg/NpqD628ZX_rnzXVSe0ZvJx206sWrcgmRpSZk9A/6ctShoHhmU4.jpg?size=180x240&quality=96&sign=4d2fba9d01df60310b2cff20ae9b3535&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Unfallen",
+    "price": 520,
+    "influence": 2
+  },
+  {
+    "id": "19",
+    "name": "Anaxagoras",
+    "heroImage": "https://sun9-64.userapi.com/impg/SXLVVyyxVGWGr0T_N9LQAoLI72gOEBE6vr4ySw/XTs9qFVJgtc.jpg?size=180x240&quality=96&sign=a10fa22bd5d7b59714fc9f643fa18e6b&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Unfallen",
+    "price": 670,
+    "influence": 3
+  },
+  {
+    "id": "20",
+    "name": "Malk Unbound",
+    "heroImage": "https://sun9-73.userapi.com/impg/YZ6l9rWeDS4kLnNMVOTGKdBvr-HzAwjevT8d7g/ErGeMJSjtg4.jpg?size=180x240&quality=96&sign=de2d3bee20baa7da2de3002dabd55b81&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Cravers",
+    "price": 560,
+    "influence": 6
+  },
+  {
+    "id": "21",
+    "name": "Risto Libera",
+    "heroImage": "https://sun9-71.userapi.com/impg/P6DIHU5oBGS96NEidWUvYVGjAPvOKqoUZQpAXg/6wepgHB_mzA.jpg?size=180x240&quality=96&sign=53669f4592738c75cdf60d44ca0a79a3&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Cravers",
+    "price": 1230,
+    "influence": 4
+  },
+  {
+    "id": "22",
+    "name": "Kren Solutus",
+    "heroImage": "https://sun9-38.userapi.com/impg/FhMWMVReuoPBIMDQu_MLB44MfwIcx4TRkT8E1g/C2vsIiWX2k8.jpg?size=180x240&quality=96&sign=0425807f7e427fe606a992c4e6b0bfe7&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Cravers",
+    "price": 725,
+    "influence": 6
+  },
+  {
+    "id": "23",
+    "name": "Oroyo Ner Freed",
+    "heroImage": "https://sun9-2.userapi.com/impg/6J8a4G_e5bpuW22CZ8gygcBs1KPKIr8_vbkkgQ/qHuP57-nGC8.jpg?size=180x240&quality=96&sign=38a845b5c055f07cd26a1bc46b26959f&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Cravers",
+    "price": 790,
+    "influence": 2
+  },
+  {
+    "id": "24",
+    "name": "Iotar Vos-Lancellum",
+    "heroImage": "https://sun9-18.userapi.com/impg/uVYt_Vd3kfPy-tK2kISftVd6RQA4ylQJxoOhew/RABnQ7x_LoM.jpg?size=180x240&quality=96&sign=f01439e88b6c0c226ae7ca9fdf2de27c&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Lumeris",
+    "price": 1100,
+    "influence": 8
+  },
+  {
+    "id": "25",
+    "name": "Kolstya Velm-Omokar",
+    "heroImage": "https://sun9-8.userapi.com/impg/QivOMXfasTf0z7yZqprccfujIHKTmXfDSbQJzQ/BPGL3LFKJKQ.jpg?size=180x240&quality=96&sign=237d409d68014dd039d7cc3f11ebdf71&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Lumeris",
+    "price": 980,
+    "influence": 8
+  },
+  {
+    "id": "26",
+    "name": "Jenhaestra Drev-Meos",
+    "heroImage": "https://sun9-4.userapi.com/impg/sJSvS70N7_Qpwl0g1qpaJdz27q-rO_PB-NCqsQ/9Xd5dKBipNk.jpg?size=180x240&quality=96&sign=a4a0f2ab4cfcd5798a93082989c0f33f&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Lumeris",
+    "price": 1340,
+    "influence": 10
+  },
+  {
+    "id": "27",
+    "name": "Brunem Berto'Lancellum",
+    "heroImage": "https://sun9-8.userapi.com/impg/_Mg2_65298gGU5b4kC_e7ff-MC6iZpd2VQoXNw/RLkfXwn18EE.jpg?size=180x240&quality=96&sign=d109419c242decda12fd844ed0806576&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Lumeris",
+    "price": 380,
+    "influence": 1
+  },
+  {
+    "id": "28",
+    "name": "Petrov Jutka",
+    "heroImage": "https://sun9-54.userapi.com/impg/xjsfl5bkQfVOZUXFBjv-2UjbAFXHStm8VSRCgA/fxEraiTQKs4.jpg?size=180x240&quality=96&sign=e6c6e1ba22f2190c15d10f1ecbf7f302&type=album",
+    "types": [
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Vaulters",
+    "price": 730,
+    "influence": 7
+  },
+  {
+    "id": "29",
+    "name": "Serz Kersho",
+    "heroImage": "https://sun9-58.userapi.com/impg/JhGXRF5SBKd9RKRJEMGULF5YKOxrELfCsin0EQ/wlkgYJDgJso.jpg?size=180x240&quality=96&sign=25ce4fedd171c20fc41837ed836998c5&type=album",
+    "types": [
+      0,
+      1
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Vaulters",
+    "price": 890,
+    "influence": 6
+  },
+  {
+    "id": "30",
+    "name": "Raudd Klapatch",
+    "heroImage": "https://sun9-17.userapi.com/impg/YnuQCx1vIbzhWERWyX7qpB81Xig3Q2Hb8ykpXg/APVo1Cos9e4.jpg?size=180x240&quality=96&sign=cc4e925f213c1fb0dd9a4beb7fa22370&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Vaulters",
+    "price": 610,
+    "influence": 2
+  },
+  {
+    "id": "31",
+    "name": "Rill Kata",
+    "heroImage": "https://sun9-64.userapi.com/impg/Xwpz_K43vKAcSjgNhN1fx9VNmctrfVj0j8lpXA/20kYsxKBHJc.jpg?size=180x240&quality=96&sign=e8b820ed1cd9f5bacd77db5e8a8724ae&type=album",
+    "types": [
+      0
+    ],
+    "lvls": [
+      1,
+      5,
+      18
+    ],
+    "faction": "Vaulters",
+    "price": 890,
+    "influence": 4
+  }
+]

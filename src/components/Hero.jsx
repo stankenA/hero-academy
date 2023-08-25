@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/slices/cartSlice';
 import { heroLvls, heroTypes } from '../utils/constants';
@@ -33,11 +34,13 @@ export default function Hero({ name, price, heroImage, lvls, types, id }) {
 
   return (
     <li className="hero">
-      <img
-        src={heroImage}
-        alt="Hero"
-        className="hero__img"
-      />
+      <Link to={`/hero/${id}`} className="hero__link">
+        <img
+          src={heroImage}
+          alt="Hero"
+          className="hero__img"
+        />
+      </Link>
       <h3 className="hero__name">{name}</h3>
       <div className="hero__chars">
         <ul className="hero__type list">
