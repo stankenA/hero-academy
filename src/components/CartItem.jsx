@@ -7,15 +7,15 @@ export default function CartItem({ id, name, type, lvl, price, img, count }) {
   const [isDecrementDisabled, setIsDecrementDisabled] = useState(false);
 
   function onIncrement() {
-    dispatch(addItem({ id }))
+    dispatch(addItem({ id, lvl, type }))
   };
 
   function onDecrement() {
-    dispatch(decrementItem(id));
+    dispatch(decrementItem({ id, lvl, type }));
   }
 
   function onRemove() {
-    dispatch(removeItem(id));
+    dispatch(removeItem({ id, lvl, type }));
   };
 
   useEffect(() => {

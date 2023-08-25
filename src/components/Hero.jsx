@@ -12,7 +12,11 @@ export default function Hero({ name, price, heroImage, lvls, types, id }) {
   const [activeType, setActiveType] = useState(0);
   const [activeLvl, setActiveLvl] = useState(0);
 
-  const addedItem = useSelector((state) => state.cart.items.find((item) => item.id === id));
+  const addedItem = useSelector((state) => state.cart.items.find((item) => item.id === id
+    && item.type === heroTypes[activeType]
+    && item.lvl === heroLvls[activeLvl])
+  );
+
   const count = addedItem ? addedItem.count : 0;
 
   function onClickAdd() {

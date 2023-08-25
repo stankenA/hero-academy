@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchHeroes = createAsyncThunk('heroes/fetchHeroesStatus', async (url) => {
+export const fetchHeroes = createAsyncThunk('heroes/fetchHeroesStatus', async (url, thunkAPI) => {
   const res = await axios.get(url);
   return res.data;
 });
@@ -9,6 +9,7 @@ export const fetchHeroes = createAsyncThunk('heroes/fetchHeroesStatus', async (u
 const initialState = {
   heroes: [],
   status: '', // loading | success | error
+  errorMessage: '',
 };
 
 export const heroesSlice = createSlice({
@@ -29,8 +30,9 @@ export const heroesSlice = createSlice({
         state.heroes = action.payload;
         state.status = "success";
       })
-      .addCase(fetchHeroes.rejected, (state) => {
+      .addCase(fetchHeroes.rejected, (state, action) => {
         state.status = "error";
+        state.errorMessage = action.error.message;
         state.heroes = [];
       })
   }

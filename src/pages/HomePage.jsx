@@ -21,7 +21,7 @@ export default function HomePage() {
 
   // redux logic
   const { selectedSort, selectedFaction, searchValue } = useSelector(state => state.filter);
-  const { heroes, status } = useSelector(state => state.heroes);
+  const { heroes, status, errorMessage } = useSelector(state => state.heroes);
 
   // достаём URL параметры
   // useEffect(() => {
@@ -78,7 +78,8 @@ export default function HomePage() {
                 />)
               : status === 'error'
                 ? <h2 className="heroes__title heroes__title_error">
-                  {`Something went wrong`}
+                  {`Something went wrong:`} <br />
+                  {errorMessage}
                 </h2>
                 : <h2 className="heroes__title heroes__title_error">
                   {`No heroes? ( ͠° ͟ʖ ͡°)`}

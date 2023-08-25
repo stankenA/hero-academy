@@ -15,6 +15,8 @@ export default function CartPage() {
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   const { totalPrice } = useSelector(state => state.cart);
 
+  console.log(items);
+
   function clearCart() {
     dispatch(clearItems());
   }
@@ -38,7 +40,7 @@ export default function CartPage() {
         <ul className="cart__list list">
           {items.map((item) =>
             <CartItem
-              key={item.id}
+              key={item.id + item.lvl + item.type}
               {...item}
             />
           )}
