@@ -15,8 +15,6 @@ export default function CartPage() {
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   const { totalPrice } = useSelector(state => state.cart);
 
-  console.log(items);
-
   function clearCart() {
     dispatch(clearItems());
   }

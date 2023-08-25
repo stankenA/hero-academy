@@ -52,7 +52,7 @@ export default function HomePage() {
       const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
       const search = searchValue ? `&search=${searchValue}` : '';
 
-      dispatch((fetchHeroes(baseUrl + sort + order + faction + search)));
+      dispatch((fetchHeroes(baseUrl + sort + order + search + faction)));
     }
 
     getHeroes();

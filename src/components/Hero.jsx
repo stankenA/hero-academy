@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/slices/cartSlice';
+import { heroLvls, heroTypes } from '../utils/constants';
 
 export default function Hero({ name, price, heroImage, lvls, types, id }) {
 
   const dispatch = useDispatch();
-
-  const heroTypes = ['Guardian', 'Overseer'];
-  const heroLvls = [1, 5, 18];
 
   console.log(types)
   const [activeType, setActiveType] = useState(types.length === 1 && types[0] === 1 ? 1 : 0);

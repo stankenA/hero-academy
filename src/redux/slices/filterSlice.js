@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  selectedSort: 'influence',
+  selectedSort: 'alphabet',
   selectedFaction: 'All',
   searchValue: '',
 };

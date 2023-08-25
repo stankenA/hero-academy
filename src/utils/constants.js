@@ -24,7 +24,7 @@ export const factionsArr = [
     icon: uc,
   },
   {
-    name: 'Riftborns',
+    name: 'Riftborn',
     icon: rift,
   },
   {
@@ -46,3 +46,6 @@ export const factionsArr = [
 ];
 
 export const sortArr = ['influence', 'price', 'alphabet'];
+
+export const heroTypes = ['Guardian', 'Overseer'];
+export const heroLvls = [1, 5, 18];
