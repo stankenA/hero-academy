@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-export default function ExtendedHero({ title, img }) {
+export default function ExtendedHero() {
 
-  const [hero, setHero] = useState();
+  const [hero, setHero] = useState<{
+    name: string, heroImage: string
+  }>();
 
   const { id } = useParams();
 

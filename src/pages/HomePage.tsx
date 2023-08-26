@@ -20,8 +20,8 @@ export default function HomePage() {
 
 
   // redux logic
-  const { selectedSort, selectedFaction, searchValue } = useSelector(state => state.filter);
-  const { heroes, status, errorMessage } = useSelector(state => state.heroes);
+  const { selectedSort, selectedFaction, searchValue } = useSelector((state: any) => state.filter);
+  const { heroes, status, errorMessage } = useSelector((state: any) => state.heroes);
 
   // достаём URL параметры
   // useEffect(() => {
@@ -52,6 +52,7 @@ export default function HomePage() {
       const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
       const search = searchValue ? `&search=${searchValue}` : '';
 
+      // @ts-ignore
       dispatch((fetchHeroes(baseUrl + sort + order + search + faction)));
     }
 
@@ -71,7 +72,7 @@ export default function HomePage() {
             ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
             : status === 'success' && heroes.length !== 0
               ?
-              heroes.map((hero) =>
+              heroes.map((hero: any) =>
                 <Hero
                   key={hero.id}
                   {...hero}

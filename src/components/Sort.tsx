@@ -7,7 +7,7 @@ import { setSelectedSort } from '../redux/slices/filterSlice';
 export default function Sort() {
 
   const dispatch = useDispatch();
-  const selectedSort = useSelector(state => state.filter.selectedSort);
+  const selectedSort = useSelector((state: any) => state.filter.selectedSort);
 
   const [isSortOpened, setIsSortOpened] = useState(false);
 

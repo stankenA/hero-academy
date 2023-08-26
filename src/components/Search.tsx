@@ -6,20 +6,20 @@ import debounce from 'lodash.debounce';
 
 export default function Search() {
 
-  const { searchValue } = useSelector(state => state.filter);
+  const { searchValue } = useSelector((state: any) => state.filter);
   const [inputValue, setInputValue] = useState(searchValue);
 
   const dispatch = useDispatch();
 
-  const searchInput = useRef();
+  const searchInput = useRef<HTMLInputElement>(null);
 
   const updateSearchValue = useCallback(
-    debounce((value) => {
+    debounce((value: string) => {
       dispatch(setSearchValue(value));
     }, 500),
     [])
 
-  function changeSearchValue(evt) {
+  function changeSearchValue(evt: React.ChangeEvent<HTMLInputElement>) {
     setInputValue(evt.target.value);
     updateSearchValue(evt.target.value);
   }
@@ -27,7 +27,7 @@ export default function Search() {
   function clearSearchValue() {
     setInputValue('');
     dispatch(setSearchValue(''));
-    searchInput.current.focus();
+    searchInput.current?.focus();
   }
 
   return (

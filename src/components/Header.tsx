@@ -10,7 +10,7 @@ export default function Header() {
 
   const location = useLocation();
   const { items, totalPrice } = useSelector(selectCart);
-  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+  const totalCount = items.reduce((sum: number, item: { count: number }) => sum + item.count, 0);
 
   return (
     <header className="header">

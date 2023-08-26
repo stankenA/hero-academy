@@ -7,7 +7,7 @@ import { setSelectedFaction } from '../redux/slices/filterSlice';
 export default function Factions() {
 
   const dispatch = useDispatch();
-  const selectedFaction = useSelector(state => state.filter.selectedFaction);
+  const selectedFaction = useSelector((state: any) => state.filter.selectedFaction);
 
   return (
     <ul className="factions list">

@@ -4,15 +4,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/slices/cartSlice';
 import { heroLvls, heroTypes } from '../utils/constants';
 
-export default function Hero({ name, price, heroImage, lvls, types, id }) {
+type HeroProps = {
+  name: string,
+  price: number,
+  heroImage: string,
+  lvls: number[],
+  types: number[],
+  id: string,
+};
+
+export default function Hero({ name, price, heroImage, lvls, types, id }: HeroProps) {
 
   const dispatch = useDispatch();
 
-  console.log(types)
   const [activeType, setActiveType] = useState(types.length === 1 && types[0] === 1 ? 1 : 0);
   const [activeLvl, setActiveLvl] = useState(0);
 
-  const addedItem = useSelector((state) => state.cart.items.find((item) => item.id === id
+  const addedItem = useSelector((state: any) => state.cart.items.find((item: any) => item.id === id
     && item.type === heroTypes[activeType]
     && item.lvl === heroLvls[activeLvl])
   );

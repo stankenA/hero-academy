@@ -8,11 +8,9 @@ import CartEmpty from '../components/CartEmpty';
 
 export default function CartPage() {
 
-
-
   const dispatch = useDispatch();
-  const items = useSelector((state) => state.cart.items);
-  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+  const items = useSelector((state: any) => state.cart.items);
+  const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
   const { totalPrice } = useSelector(selectCart);
 
   function clearCart() {
@@ -36,7 +34,7 @@ export default function CartPage() {
       </div>
       <div className="cart__content">
         <ul className="cart__list list">
-          {items.map((item) =>
+          {items.map((item: any) =>
             <CartItem
               key={item.id + item.lvl + item.type}
               {...item}
