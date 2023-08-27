@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/slices/cartSlice';
 import { heroLvls, heroTypes } from '../utils/constants';
 
-type HeroProps = {
+type THeroProps = {
   name: string,
   price: number,
   heroImage: string,
@@ -13,7 +13,7 @@ type HeroProps = {
   id: string,
 };
 
-export default function Hero({ name, price, heroImage, lvls, types, id }: HeroProps) {
+export default function Hero({ name, price, heroImage, lvls, types, id }: THeroProps) {
 
   const dispatch = useDispatch();
 

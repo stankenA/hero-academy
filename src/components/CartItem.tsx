@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addItem, decrementItem, removeItem } from '../redux/slices/cartSlice';
 
-type CartItemProps = {
+type TCartItemProps = {
   id: string,
   name: string,
   type: string,
@@ -12,7 +12,7 @@ type CartItemProps = {
   count: number,
 };
 
-export default function CartItem({ id, name, type, lvl, price, img, count }: CartItemProps) {
+export default function CartItem({ id, name, type, lvl, price, img, count }: TCartItemProps) {
   const dispatch = useDispatch();
   const [isDecrementDisabled, setIsDecrementDisabled] = useState(false);
 
