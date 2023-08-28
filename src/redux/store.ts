@@ -10,3 +10,5 @@ export const store = configureStore({
     heroes: heroesSlice,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;

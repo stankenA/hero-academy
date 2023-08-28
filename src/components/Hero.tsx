@@ -35,6 +35,7 @@ export default function Hero({ name, price, heroImage, lvls, types, id }: THeroP
       img: heroImage,
       type: heroTypes[activeType],
       lvl: heroLvls[activeLvl],
+      count: 0,
     };
 
     dispatch(addItem(item));

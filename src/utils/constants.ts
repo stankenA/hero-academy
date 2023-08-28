@@ -7,12 +7,12 @@ import lum from '../images/lum-icon.png';
 import unf from '../images/unf-icon.png';
 import vault from '../images/vault-icon.png';
 
-type FactionItem = {
+type TFactionItem = {
   name: string,
   icon?: any,
 };
 
-export const factionsArr: FactionItem[] = [
+export const factionsArr: TFactionItem[] = [
   {
     name: 'All',
   },
@@ -50,7 +50,7 @@ export const factionsArr: FactionItem[] = [
   },
 ];
 
-export const sortArr: string[] = ['influence', 'price', 'alphabet'];
+export const sortArr: ('influence' | 'price' | 'alphabet')[] = ['influence', 'price', 'alphabet'];
 
 export const heroTypes: string[] = ['Guardian', 'Overseer'];
 export const heroLvls: number[] = [1, 5, 18];

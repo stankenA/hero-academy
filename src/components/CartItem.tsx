@@ -12,36 +12,36 @@ type TCartItemProps = {
   count: number,
 };
 
-export default function CartItem({ id, name, type, lvl, price, img, count }: TCartItemProps) {
+export default function CartItem(heroItem: TCartItemProps) {
   const dispatch = useDispatch();
   const [isDecrementDisabled, setIsDecrementDisabled] = useState(false);
 
   function onIncrement() {
-    dispatch(addItem({ id, lvl, type }))
+    dispatch(addItem(heroItem))
   };
 
   function onDecrement() {
-    dispatch(decrementItem({ id, lvl, type }));
+    dispatch(decrementItem(heroItem));
   }
 
   function onRemove() {
-    dispatch(removeItem({ id, lvl, type }));
+    dispatch(removeItem(heroItem));
   };
 
   useEffect(() => {
-    if (count === 1) {
+    if (heroItem.count === 1) {
       setIsDecrementDisabled(true);
     } else {
       setIsDecrementDisabled(false);
     }
-  }, [count]);
+  }, [heroItem.count]);
 
   return (
     <li className="cart__item">
-      <img src={img} alt="Hero" className="cart__img" />
+      <img src={heroItem.img} alt="Hero" className="cart__img" />
       <div className="cart__info">
-        <h3 className="cart__item-title">{name}</h3>
-        <span className="cart__item-descr">{`${type}, ${lvl} lvl.`}</span>
+        <h3 className="cart__item-title">{heroItem.name}</h3>
+        <span className="cart__item-descr">{`${heroItem.type}, ${heroItem.lvl} lvl.`}</span>
       </div>
       <div className="cart__counter">
         <button
@@ -50,7 +50,7 @@ export default function CartItem({ id, name, type, lvl, price, img, count }: TCa
           disabled={isDecrementDisabled}
           onClick={onDecrement}
         >-</button>
-        <span className="cart__counter-number">{count}</span>
+        <span className="cart__counter-number">{heroItem.count}</span>
         <button
           type="button"
           className="cart__counter-button button"
@@ -58,7 +58,7 @@ export default function CartItem({ id, name, type, lvl, price, img, count }: TCa
         >+
         </button>
       </div>
-      <span className="cart__sum">{price * count}</span>
+      <span className="cart__sum">{heroItem.price * heroItem.count}</span>
       <button
         type="button"
         className="cart__clear-item button"
