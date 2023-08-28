@@ -9,19 +9,20 @@ import Sort from '../components/Sort';
 import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { fetchHeroes } from '../redux/slices/heroesSlice';
+import { RootState, useAppDispatch } from '../redux/store';
 
 export default function HomePage() {
 
   // const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
 
   // redux logic
-  const { selectedSort, selectedFaction, searchValue } = useSelector((state: any) => state.filter);
-  const { heroes, status, errorMessage } = useSelector((state: any) => state.heroes);
+  const { selectedSort, selectedFaction, searchValue } = useSelector((state: RootState) => state.filter);
+  const { heroes, status, errorMessage } = useSelector((state: RootState) => state.heroes);
 
   // достаём URL параметры
   // useEffect(() => {
@@ -52,7 +53,6 @@ export default function HomePage() {
       const faction = selectedFaction === 'All' ? '' : `&faction=${selectedFaction}`;
       const search = searchValue ? `&search=${searchValue}` : '';
 
-      // @ts-ignore
       dispatch((fetchHeroes(baseUrl + sort + order + search + faction)));
     }
 
@@ -72,7 +72,7 @@ export default function HomePage() {
             ? [...new Array(4)].map((el, i) => <HeroLoader key={i} />)
             : status === 'success' && heroes.length !== 0
               ?
-              heroes.map((hero: any) =>
+              heroes.map((hero) =>
                 <Hero
                   key={hero.id}
                   {...hero}

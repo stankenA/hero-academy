@@ -9,10 +9,10 @@ export const fetchHeroes = createAsyncThunk<THeroItem[], string>('heroes/fetchHe
 type THeroItem = {
   id: string,
   name: string,
-  type: string,
-  lvl: number,
+  types: number[],
+  lvls: number[],
   price: number,
-  img: string,
+  heroImage: string,
   count: number,
 };
 

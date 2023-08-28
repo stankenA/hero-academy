@@ -3,11 +3,12 @@ import { factionsArr } from '../utils/constants';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedFaction } from '../redux/slices/filterSlice';
+import { RootState } from '../redux/store';
 
 export default function Factions() {
 
   const dispatch = useDispatch();
-  const selectedFaction = useSelector((state: any) => state.filter.selectedFaction);
+  const selectedFaction = useSelector((state: RootState) => state.filter.selectedFaction);
 
   return (
     <ul className="factions list">

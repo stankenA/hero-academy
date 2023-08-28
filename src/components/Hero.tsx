@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/slices/cartSlice';
 import { heroLvls, heroTypes } from '../utils/constants';
+import { RootState } from '../redux/store';
 
 type THeroProps = {
   name: string,
@@ -20,7 +21,7 @@ export default function Hero({ name, price, heroImage, lvls, types, id }: THeroP
   const [activeType, setActiveType] = useState(types.length === 1 && types[0] === 1 ? 1 : 0);
   const [activeLvl, setActiveLvl] = useState(0);
 
-  const addedItem = useSelector((state: any) => state.cart.items.find((item: any) => item.id === id
+  const addedItem = useSelector((state: RootState) => state.cart.items.find((item) => item.id === id
     && item.type === heroTypes[activeType]
     && item.lvl === heroLvls[activeLvl])
   );
