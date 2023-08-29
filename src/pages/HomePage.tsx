@@ -11,7 +11,7 @@ import Hero from '../components/Hero';
 
 import { useSelector } from 'react-redux';
 
-import { fetchHeroes } from '../redux/slices/heroesSlice';
+import { fetchHeroes } from '../redux/heroes/asyncActions';
 import { RootState, useAppDispatch } from '../redux/store';
 
 export default function HomePage() {

@@ -6,11 +6,7 @@ import crav from '../images/crav-icon.png';
 import lum from '../images/lum-icon.png';
 import unf from '../images/unf-icon.png';
 import vault from '../images/vault-icon.png';
-
-type TFactionItem = {
-  name: string,
-  icon?: any,
-};
+import { TFactionItem, THeroLvls, THeroTypes, TSortArr } from './types/constantsTypes';
 
 export const factionsArr: TFactionItem[] = [
   {
@@ -50,7 +46,6 @@ export const factionsArr: TFactionItem[] = [
   },
 ];
 
-export const sortArr: ('influence' | 'price' | 'alphabet')[] = ['influence', 'price', 'alphabet'];
-
-export const heroTypes: string[] = ['Guardian', 'Overseer'];
-export const heroLvls: number[] = [1, 5, 18];
+export const sortArr: TSortArr[] = ['influence', 'price', 'alphabet'];
+export const heroTypes: THeroTypes[] = ['Guardian', 'Overseer'];
+export const heroLvls: THeroLvls[] = [1, 5, 18];

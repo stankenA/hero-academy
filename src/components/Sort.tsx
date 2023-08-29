@@ -1,8 +1,8 @@
-import React, { useState, memo } from 'react';
+import { useState, memo } from 'react';
 import { sortArr } from '../utils/constants';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { setSelectedSort } from '../redux/slices/filterSlice';
+import { setSelectedSort } from '../redux/filter/slice';
 import { RootState } from '../redux/store';
 
 export const Sort = memo(function Sort() {

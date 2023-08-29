@@ -1,10 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-
-interface IFilterSliceState {
-  selectedSort: 'influence' | 'price' | 'alphabet',
-  selectedFaction: string,
-  searchValue: string,
-};
+import { IFilterSliceState } from './types';
 
 const initialState: IFilterSliceState = {
   selectedSort: 'alphabet',

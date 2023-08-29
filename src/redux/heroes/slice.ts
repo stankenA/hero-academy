@@ -1,32 +1,6 @@
-import axios from 'axios';
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-
-export const fetchHeroes = createAsyncThunk<THeroItem[], string>('heroes/fetchHeroesStatus', async (url) => {
-  const { data } = await axios.get<THeroItem[]>(url);
-  return data;
-});
-
-type THeroItem = {
-  id: string,
-  name: string,
-  types: number[],
-  lvls: number[],
-  price: number,
-  heroImage: string,
-  count: number,
-};
-
-enum Status {
-  LOADING = 'loading',
-  SUCCESS = 'success',
-  ERROR = 'error',
-};
-
-interface IHeroSliceState {
-  heroes: THeroItem[],
-  status: Status,
-  errorMessage?: string,
-};
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { IHeroSliceState, Status, THeroItem } from './types';
+import { fetchHeroes } from './asyncActions';
 
 const initialState: IHeroSliceState = {
   heroes: [],

@@ -1,16 +1,29 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 import galaxy from '../images/Galaxy.svg';
 import Search from './Search';
-import { selectCart } from '../redux/slices/cartSlice';
+import { selectCart } from '../redux/cart/selectors';
 
 export default function Header() {
 
   const location = useLocation();
   const { items, totalPrice } = useSelector(selectCart);
   const totalCount = items.reduce((sum: number, item: { count: number }) => sum + item.count, 0);
+
+  const isMounted = useRef(false);
+
+  useEffect(() => {
+    console.log(isMounted.current)
+    if (isMounted.current) {
+      const json = JSON.stringify(items);
+      localStorage.setItem('cart', json);
+      return;
+    }
+
+    isMounted.current = true;
+  }, [items]);
 
   return (
     <header className="header">
