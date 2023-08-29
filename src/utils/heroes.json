@@ -14,7 +14,8 @@
     ],
     "faction": "Sophons",
     "price": 550,
-    "influence": 2
+    "influence": 2,
+    "description": "From a very young age, Dzulmaran believed that the sound of scientific experiment should not be 'Ah-ha!', but something more like 'Kaboom!'. Chemistry was her early means to this end, but in high school and university she gleefully uncovered the ways in which cracking open atoms and exploiting electromagnetic waves could lead to even larger explosions. Dzulmaran was recruited directly from her graduate program by the tiny Sophon Defensive Options department, and since her strange experiments using Dust she has only grown more powerful--and dangerous."
   },
   {
     "id": "1",
@@ -30,7 +31,8 @@
     ],
     "faction": "Sophons",
     "price": 750,
-    "influence": 4
+    "influence": 4,
+    "description": "Born on a far-flung outpost near a Craver system, Gerzi's attempts as a child prodigy to study game theory were often interrupted by alarms, evacuations, and explosions. Tiring of the constant disruptions, Gerzi applied his formidable intellectual talents and understanding of decision modeling ('might do' versus 'could do') to help a small defensive force harass and drive off a major fleet. Once he figured out just how much fun you can have with his chosen subject, Gerzi left the peaceful Sophon Cacophony, entered the Academy, and now eagerly causes trouble across the galaxy."
   },
   {
     "id": "2",
@@ -46,7 +48,8 @@
     ],
     "faction": "Sophons",
     "price": 950,
-    "influence": 4
+    "influence": 4,
+    "description": "Some believe that attention to detail is important; Nutharr believes that it is the purpose of existence. With an eidetic memory and an obsessively organized mind, he made a name for himself directing the construction of a new orbital platform without using a computer ('It's not so complex')--in his spare time. Bathed in Dust while inventorizing Kessler debris, he gained the capacity to manage and collate details on a level far beyond information technology. However, Nutharr finally discovered a worthy challenge in the governance of systems. In his words, 'When you gotta plan for what a few billion people might or might not do, stuff finally gets interesting.'"
   },
   {
     "id": "3",
@@ -62,7 +65,8 @@
     ],
     "faction": "Sophons",
     "price": 650,
-    "influence": 6
+    "influence": 6,
+    "description": "Rhamoezz was born into a family that took its social responsibilities seriously, and grew up a concerned do-gooder and volunteer worker. Mocked for her love of social sciences by her mathematician friends, her widespread mastery of neuroscience, psychology, anthropology, linguistics, and cognitive computing nevertheless gave her a brilliant political career. When a colony ship she governed landed on a planet full of ancient ruins and unnatural topography, Rhamoezz was exposed to concentrations of Dust and gained an almost psychic capacity to predict and control the actions and opinions of masses of population."
   },
   {
     "id": "4",
@@ -78,7 +82,8 @@
     ],
     "faction": "United Empire",
     "price": 550,
-    "influence": 8
+    "influence": 8,
+    "description": "Most generals send soldiers to their death by ordering them to the battlefield. Immah Naratya has cultivated a different reputation. As the United Empire's most efficient logistics officer she acquired the reputation of mastering brutally efficient supply lines, working men and women to the bone to make sure factories, shipping lines, and dockworkers kept the Imperial Navy afloat and functioning. But someone had other plans for her. While touring one of the Empire's factories, a messenger delivered a mysterious package that upon unsealing exploded with pure Dust. Suddenly her view of the workers toiling to their deaths changed drastically. Most exposed to pure Dust gain depth in logic, wisdom, and understanding, but Naratya gained the whole emotional spectrum that had been suppressed for so many years. She knows not if she can trust the Academy, for she suspects they were behind the Dust attack, but every day she finds her loyalty to her Emperor fading just a little. All she knows is she must make amends for the lives she ruined with her work. She seeks a balance between the intellectual firepower she was born with, and the newfound compassion granted to her by fate."
   },
   {
     "id": "5",
@@ -95,7 +100,8 @@
     ],
     "faction": "United Empire",
     "price": 750,
-    "influence": 7
+    "influence": 7,
+    "description": "In the press, Dominik Havanen might have been one of the most celebrated business leaders of the Empire, but among its corporate leaders, he was hated and reviled. Clinging on to a fortune whose origins trickle far back into the history of the United Empire, Havanen built his name by picking a sector of the Imperial economy at random and snapping up stock ownership in various corporations. He acted with such impulsiveness that none could predict his next financial move--he tore his allies apart and swallowed their businesses into his own, then threw grand parties for his enemies and invited them into the fold. Havanen is a man so unpredictable, he once secured a supply of pure Dust to see what would happen when he exposed himself to its effects. The results were so frightening even the Academy didn't appreciate his presence. Havanen seems interested in only one goal now: pure galactic instability. Though for the right price, he may be willing to bend that chaos to another's cause."
   },
   {
     "id": "6",
@@ -111,7 +117,8 @@
     ],
     "faction": "United Empire",
     "price": 850,
-    "influence": 10
+    "influence": 10,
+    "description": "Oleg Lagarin's life was pitifully ordinary for a citizen of the United Empire. Conscripted at age eighteen. Dropped into the most average battalion possible. Sent to die as cannon fodder while assailing an insurgent fortress. Struck down by a stray artillery blast. In the heat and haze of battle, his exosuit blaring warning signs about his vitals, he readied himself for death. But death did not come. A reservoir of pure Dust poured out of the cracks opened by the artillery, and Lagarin was suddenly overcome with more strength and vitality then he'd ever known in his life. The after action reports confirm several witnesses who watched him rise from the ground, roar, and barrel toward the enemy fortress, smashing a weakened wall with his battle-wracked exosuit. Such heroics earned Lagarin praise within the Empire, but the man still does not know peace. In the quiet of night, he still smells the sick haze of that battlefield, still hears the cannon roar in the distance. And as reality slips away and he returns to that dark place, visions of other mysterious creatures enter his vision too . ."
   },
   {
     "id": "7",
@@ -127,7 +134,8 @@
     ],
     "faction": "United Empire",
     "price": 1050,
-    "influence": 12
+    "influence": 12,
+    "description": "The younger brother of the Emperor's personal bodyguard, Hadri Lenko, Dmitri decided to forge his own path away from his brother's rising star. Signing up for early United Empire prospecting missions to help map the hinterlands of the home system, Dmitri helped develop several critical industrial facilities in the Kuiper belt. Rugged and determined as he was, Dmitri found his best skill wasn't his labors though--it was acting as a placatory influence on the inevitable daily squabbles that broke out between competing prospecting firms. Squabbles that could often be fatal if not resolved. Eventually tiring of the petty disputes, but not ready to return to Raia, Dmitri launched himself into the newly discovered starlanes. After years of wandering the galaxy, he stumbled upon the Academy . . . Impressed by Dmitri's ability to sneak deep into the facility before being discovered, the Academy Leader decided to bring him into the fold . . ."
   },
   {
     "id": "8",
@@ -143,7 +151,8 @@
     ],
     "faction": "Umbral Choir",
     "price": 1050,
-    "influence": 9
+    "influence": 9,
+    "description": "A harmony of the Umbral Choir that found itself exploring the supernovaed shell of a spent star, Sila would've remained a resonating echo of the whole if not for coming across the husk of a long-dead Lost. Seared by the trapped Dust, Sila experienced a severing from the mind gestalt, as well as a partial manifestation into the physical realm. Overwhelmed, but heightened to the sensitivities of the galaxy's currents of Dust, Sila discovered the shattered Harrow system, where it watched the machinations of Isyander and his Academy. Not the only one watching though, Sila was first ensnared before proving its innocence to Anaxagoras and Ay Seer 1.2Gado, after which it was given license to roam and learn on behalf of the Academy."
   },
   {
     "id": "9",
@@ -160,7 +169,8 @@
     ],
     "faction": "Umbral Choir",
     "price": 850,
-    "influence": 8
+    "influence": 8,
+    "description": "A gentle echo in the majesty which is the symphony of the Umbral Choir, Fasol's sundering from the overmind came when it infiltrated a Craver warship as it undertook a hyperspace jump. Alone in the hive-like network of the vessel's central nervous system, Fasol was terrified on two distinct planes. First, the wrenching, disorienting separation from its collective, but secondly, being in the presence of such a species of ceaseless violence. Most likely Fasol would've perished, but for the Craver's cargo--a vital stock of Dust that permeated into the wraith's ethereal form, transforming it into a cognitive powerhouse. Somehow, with a potent message of peace, Fasol flipped the Craver crew from insatiable warfarers to committed pacifists. While Fasol continues its mission of non-violence, the Craver vessel is rumored to have found sanctuary on a Pilgrim research world."
   },
   {
     "id": "10",
@@ -176,7 +186,8 @@
     ],
     "faction": "Umbral Choir",
     "price": 600,
-    "influence": 12
+    "influence": 12,
+    "description": "If there was any echo which might've been suspected to harbor desires of emancipation and independence from the Umbral Choir collective, Lare would've been a good bet. A refrain with aggressive tendencies, during the Choir's early forays through the galaxy, Lare often infiltrated other species' logical systems in a manner that frequently led to fear and conflict (one example being the Rydha Skirmish between Horatio and Choir fleets, leading to the Horatio Commander's famous words: 'Monsters from other realms do exist--and they must be beautified!'). Lare's freedom arrived after it annihilated a Hissho Kestrel-class vessel carrying Endless Dust relics."
   },
   {
     "id": "11",
@@ -193,7 +204,8 @@
     ],
     "faction": "Umbral Choir",
     "price": 1000,
-    "influence": 11
+    "influence": 11,
+    "description": "Miredo's liberation from the Umbral Choir collective came during a clandestine visit to the Sophon homeworld, Hekim. Unbeknownst to the Choir, infiltrating the Sophon's primary computer network put Miredo figuratively face-to-face with the galaxy's most sophisticated AI, ENFER. Inside ENFER's silicon citadel, a tremendous battle of wits ensued encompassing logic, physics, and theology. Miredo eventually lost, and might've been consigned to the digital trash, but for ENFER's mercy. Admiring the wraith's diverse talents, ENFER felt the galaxy would be a lesser place without the deep thinker and set it free from the mind gestalt through a controlled exposure to Dust."
   },
   {
     "id": "12",
@@ -210,7 +222,8 @@
     ],
     "faction": "Riftborn",
     "price": 930,
-    "influence": 7
+    "influence": 7,
+    "description": "When the rift tore a hole in the very fabric of the Riftborn's universe, most of e's worldmates fled in terror. Not e. Fascinated by the universe on the other side of the rift, e was one of the first Riftborn to begin analyzing the tear--and one of the first to seriously consider breaching the Endless universe. This curiosity led to e piloting the first craft through the rift and into the galaxy with a small team of empiricists. Unfortunately, contact with the home dimension was lost, and e and its team became stranded on a barren, rocky nomad world passing through a red-supergiant star system. Despite making great strides in understanding the complex ecologies of the planet, the rapidly receding star meant the world grew colder and colder. One by one, e's teammates succumbed to the freezing temperatures. When things seemed utterly lost e had an epiphany though. Setting up an emergency beacon, e used the cold to put itself into a state of suspended animation. Eventually rescued by Haroshem scavengers, e was brought to the attention of the Academy who were more than happy to bring e into their fold."
   },
   {
     "id": "13",
@@ -226,7 +239,8 @@
     ],
     "faction": "Riftborn",
     "price": 1020,
-    "influence": 8
+    "influence": 8,
+    "description": "A key figure in the establishment of a base of operations on the snowy wilderness of Vanguard, [pi] ensured that the Riftborn presence in the Endless universe grew in a swift and orderly fashion. Although eternally grateful for [pi]'s help, the Grand Viceroy's relationship with the administrator grew increasingly difficult on account of [pi]'s extreme pacifism. Believing Riftborn activity in the galaxy always needed to put the rights of other sentient organisms first and foremost, [pi] was a constant thorn in the Grand Viceroy's expansion plans. Eventually tiring of [pi]'s objections, the Grand Viceroy sent the Riftborn administrator on a mission to learn what it could of the other races of the galaxy. [pi] quickly came to the attention of the Academy when its deep analysis of Hero sightings throughout the galaxy allowed it to narrow down the location of the fabled institution to within ninety-odd star systems. An invitation to join rapidly followed. Today [pi] offers its services to the highest bidder."
   },
   {
     "id": "14",
@@ -242,7 +256,8 @@
     ],
     "faction": "Riftborn",
     "price": 970,
-    "influence": 2
+    "influence": 2,
+    "description": "Warfare may have been an alien concept to the Riftborn in their previous existence, but that didn't prevent [sum] enjoying a natural aptitude for the subject. After helping to defend the beachhead on Vanguard from vicious attacks by native snow wolves, [sum] volunteered to command the Riftborn's very first military fleet on a tour of the local system. Set upon by pirates in the ice fields of the outer reaches of the system, [sum]'s agile tactics helped protect his ships while driving off the attackers into interstellar space. Upon return to Vanguard, [sum] negotiated with the Grand Viceroy: in exchange for free movement in the galaxy and the opportunity to learn battlefield strategy from the great warfaring civilizations, [sum] would first found a military school on Vanguard to help safeguard its fellow Riftborn. The Grand Viceroy agreed, and soon after establishing the school [sum] set out for distant stars. Many famous victories followed, but the most significant battle for [sum] ended in defeat. Barely escaping with its life, [sum]'s life raft was caught in the aftershock of the capital vessel's explosion, enduring a hail of high velocity Dust. Somehow, this event augmented [sum]'s mind--and the paucity of its strategy became crystal clear. Humbled, [sum] interpreted the experience as the Gods teaching it a lesson. [sum] still had much to learn."
   },
   {
     "id": "15",
@@ -258,7 +273,8 @@
     ],
     "faction": "Riftborn",
     "price": 890,
-    "influence": 6
+    "influence": 6,
+    "description": "Although somewhat religiously minded before the explosion of the Gray Owl ripped a hole in the Riftborn's universe, afterwards [derivate] became one of the most holy figures among all of its kind. Being at the epicenter of a Dust explosion can do that. Saturated with Dust, [derivate] found its mind overrun with revelatory visions concerning the Riftborn's future. How the blight would spread. How they would traverse the multiverse. How a savior would step up . . . Preaching to any who would listen, [derivate]'s words were first considered the ravings of a demented being, until its prophetic auguries slowly came to pass. Afforded respectability, [derivate] became a powerful, persuasive voice and was instrumental in the Riftborn's decision to venture into the Endless universe, going against the ruling Communion who initially counselled for caution. Whether [derivate]'s allegiance still belongs to the Riftborn is uncertain, but what cannot be disputed is its fierce inner belief that Dust is the secret to ruling the universe."
   },
   {
     "id": "16",
@@ -274,7 +290,8 @@
     ],
     "faction": "Unfallen",
     "price": 890,
-    "influence": 9
+    "influence": 9,
+    "description": "Although the Unfallen move slowly and speak softly, they possess quick minds and a great capacity for learning. Baramaxa is such an example, an Unfallen that revels in the joy of learning and exploration. She has a scientific mind, and lent her talents for years to the analysis and discovery of the wealth of planets and astral bodies in her home system. Her experiments with life and death pushed barriers that others felt uncomfortable with, and some view her over-developed sense of curiosity with unease. Baramaxa, however, bears no guilt. As an Unfallen, she knows that there is no such thing as true death -- only a Long Sleep."
   },
   {
     "id": "17",
@@ -291,7 +308,8 @@
     ],
     "faction": "Unfallen",
     "price": 870,
-    "influence": 5
+    "influence": 5,
+    "description": "Lunabarxes had found her place -- or so she thought. Ensconced in a flowering grove in the center of a bustling forest metropolis, Lunabarxes was on the verge of metamorphosis into the final stage of Unfallen life when errant missiles, falling from the wars of some other species in the skies above her planet, erupted around her. Dust-fueled explosives tore up the boulevards and shattered the peace she had sought for so long. Though many Unfallen were thrown into madness, Lunabarxes had been so close to a state of final repose that she was able to pause, sink her roots deep, and slowly absorb and assimilate the Dust. The Dust gradually sharpened Lunabarxes's mind and senses, providing her so much more information and so many new intellectual vistas that she decided to put off the transition from being an exploring Second to becoming a sedentary Third. She now wanders the universe, calmly providing aid where she can -- and still looking for a place to call home."
   },
   {
     "id": "18",
@@ -307,7 +325,8 @@
     ],
     "faction": "Unfallen",
     "price": 520,
-    "influence": 2
+    "influence": 2,
+    "description": "Thustrellen loves the feeling of sunlight on his bark. As a young Second, he found his way across his system to another planet, inhabited by a primitive species. He rested there for years, providing shade and wisdom to the primitive local population. He never set down roots, however, because in his heart he knew there was an even better place for him out there in the stars; a place where he could be surrounded by even more life and warmth and sunlight. Now that the Unfallen have developed spaceflight and sought out new colonies, Thustrellen plans to accompany them -- and see what sort of grand adventures the galaxy can offer him."
   },
   {
     "id": "19",
@@ -323,7 +342,8 @@
     ],
     "faction": "Unfallen",
     "price": 670,
-    "influence": 3
+    "influence": 3,
+    "description": "The Unfallen known as Anaxagoras found himself wandering a barren landscape after his exploration vehicle was destroyed by lightning. He wandered the empty landscapes for months singing and churning up the soil, until an expeditionary force from the Academy, seeking traces of the Lost, took him into captivity. From there he was delivered to the mysterious Academy, where he was to be studied as a seed of a new species. But Anaxagoras surprised everyone, including himself, by taking quickly to the computer systems used throughout the Academy. His wonder and fascination was exceeded only by his capacity for learning, and soon Anaxagoras had mastered the complex war games that others in the Academy played for entertainment. Now a fully fledged Hero, Anaxagoras enjoys his war games on a much larger scale -- though some wonder if he truly understands the destructive ramifications of his play."
   },
   {
     "id": "20",
@@ -339,7 +359,8 @@
     ],
     "faction": "Cravers",
     "price": 560,
-    "influence": 6
+    "influence": 6,
+    "description": "'Obedience is expected; loyalty must be induced.' Unbound learned to obtain uncompromising control over their drones by creating and exuding more potent pheromones. Transformed by Dust when gutting an Endless temple, he now uses their increased expertise to generate a sort of Dust-enhanced near-chemical-dependence among any sentient troops he leads. Unbound has now become not just a clever leader, but one supported by fanatical soldiers who are indifferent to danger and injury."
   },
   {
     "id": "21",
@@ -355,7 +376,8 @@
     ],
     "faction": "Cravers",
     "price": 1230,
-    "influence": 4
+    "influence": 4,
+    "description": "Due to their advanced skills in leading large construction projects Libera was sent to install a major Craver military base in an asteroid belt. The asteroids turned out to be a disused Dust storehouse, and Libera experienced Dust enlightenment like an adrenaline rush. Since then Libera has sought ever-greater and more complex challenges in management and development, hoping to repeat that surge of power and pleasure. The greater the difficulty, the greater the glory, the more powerful the reward…"
   },
   {
     "id": "22",
@@ -372,7 +394,8 @@
     ],
     "faction": "Cravers",
     "price": 725,
-    "influence": 6
+    "influence": 6,
+    "description": "The reputation of Solutus began as a simple soldier, when it gained the nickname Undying. Having fought and survived more battles than any other Craver, first as drone and then as bishop, Solutus voluntarily ingested lethal levels of Dust in its relentless search for greater strength and higher performance. Relentless to the end, Solutus has an impressive record of winning battles, or in the case of defeat, fearlessly returning for a rematch."
   },
   {
     "id": "23",
@@ -388,7 +411,8 @@
     ],
     "faction": "Cravers",
     "price": 790,
-    "influence": 2
+    "influence": 2,
+    "description": "One of the fraction of a percent of Cravers who become a queen, the Endless took Oroyo as a test subject in order to mutate her body to create eggs that would provide larger, stronger, more dangerous warriors. The advanced cybernetic systems they used proved too much for her simple Craver nervous system, and the resulting neuronal overload was almost lethal. The Virtuals decided to save her, however, and applied enough of their own technology to re-create her persona in an artificial brain. The side effects, unsurprisingly, were numerous. The explosive growth in brain capacity led to eidetic memory and a linked obsessive fascination for seemingly pointless data, as now she had the ability to note and track innumerable details. With this capacity, however, came a great deal of information that she should not have had, and Freed used her own enhanced intellectual capacity to infiltrate and spike the Virtual network--murdering the entire lab system in which she was being held. She launched herself on an Anti-Endless rampage--Concrete and Virtual alike--until the resources of a small fleet were turned upon her and she was finally captured and frozen for study. The details of how and why Hnifri Kabtuycha discovered and freed her have never been made public, though she is now available for hire as a freelance Hero."
   },
   {
     "id": "24",
@@ -405,7 +429,8 @@
     ],
     "faction": "Lumeris",
     "price": 1100,
-    "influence": 8
+    "influence": 8,
+    "description": "Once a rising star in the Lancellum family, Iotar Vos'Lancellum's reputation was left in tatters when he disobeyed the orders of a pureblood Lancellum Admiral on the eve of a massive battle. Lancellum ships had just made contact with a strange fleet of vessels that appeared near the Lumerian homeworld. In the chaos, Iotar rallied the Lancellum ships together to defend the homeworld but was wounded when his ship collided with an enemy vessel. In the ensuing battle an explosion of Dust destroyed every vessel except his own. Blamed for the loss of the Lumerian fleet, Iotar would have been court-martialed had he returned to Jenes. In the bloody aftermath, however, shadowy figures claiming to be from an organization called 'The Academy' swooped in and peeled him from the wreckage. Possessing strange new powers and in search of answers, Iotar agreed to join the mysterious organization. Today, as he travels the stars, he still seeks to discover the origins of the fleet that attacked his people—and who, if any among his crew, had a hand in its assault."
   },
   {
     "id": "25",
@@ -421,7 +446,8 @@
     ],
     "faction": "Lumeris",
     "price": 980,
-    "influence": 8
+    "influence": 8,
+    "description": "Kolstya Velm'Hopris'Omokar might have lived out her life as an ordinary dockworker, were it not for the day her wife became trapped in an asteroid mining facility. Watching in horror as the Meos leadership refused to fund a rescue mission, Kolstya took matters into her own hands, hijacking a scrapped mining drone and piloting it straight into the doomed asteroid. Through this desperate act, she was able to save her wife and the other trapped workers, but not without being exposed to vast amounts of pure Dust that was released on impact. Now Kolstya is a heroine among the Omokar labor unions, and has made powerful friends in both the Arrakyo and Lancellum families as a champion for the ordinary Lumerian. But fame and fortune have brought little happiness to Kolstya, for now she struggles both against the demands of the Academy and the plotting of the greedy Meos leaders. A part of Kolstya wants to throw her new life away and spend all her time at her wife's side, but another part knows her life was no longer hers the moment she hijacked that mining drone."
   },
   {
     "id": "26",
@@ -437,7 +463,8 @@
     ],
     "faction": "Lumeris",
     "price": 1340,
-    "influence": 10
+    "influence": 10,
+    "description": "Jenhaestra Drev'Dros'Meos was starbound for trouble long before the Dust of the Endless crossed his path. He'd built a stake among the Meos clan for being a Lumerian willing to deal in illicitly acquired goods. Strangely, Jenhaestra's ultimate goal was not extracting the highest profit on these goods, but the preservation of objects he believed might fall into more nefarious hands. When one of his brokers promised a chest of pure Dust from an Endless wonder, Jenhaestra could not possibly resist—but neither could he have predicted what would happen when he was exposed to its raw power. Now one of the most powerful financial operators in the galaxy, Jenhaestra is always happy to sell his services to the highest bidder. As well as being a canny investor, he is also one of the most well-connected individuals in the galaxy, and is always on the lookout for other priceless relics to add to his own private collection."
   },
   {
     "id": "27",
@@ -453,7 +480,8 @@
     ],
     "faction": "Lumeris",
     "price": 380,
-    "influence": 1
+    "influence": 1,
+    "description": "Very bright but very happy to remain lazy, clever and wealthy, this scion of the Lancellum family was jerked out of his complacent lifestyle when the resort ship he was vacationing on was attacked by pirates. Taking an active part in the defense of the vessel, he found a taste for adrenaline that he did not realize he had. This led him to increasingly extreme sports, events, hunts, and activities, until the day when extreme speleology in an Endless ruin changed his life forever. Affected by Dust and suddenly capable of enormous feats beyond his comprehension, he turned to the only leader in the galaxy he judged capable of guiding and teaching him: Isyander St Shaiad, the founder of the Academy."
   },
   {
     "id": "28",
@@ -469,7 +497,8 @@
     ],
     "faction": "Vaulters",
     "price": 730,
-    "influence": 7
+    "influence": 7,
+    "description": "Another ghost from a long line of ghosts, Jutka always had an uncanny knack for infiltration and ambush operations. A natural warrior and unpredictable commander, her troops have a history of success and survival that make her the envy of friend and foe. While some say it must be in her genes, given her famous great-grandmother, Judit, her grueling training and relentless drive should also be taken into account when explaining her phenomenal success."
   },
   {
     "id": "29",
@@ -486,7 +515,8 @@
     ],
     "faction": "Vaulters",
     "price": 890,
-    "influence": 6
+    "influence": 6,
+    "description": "A troubled child with a history of violence, it took a brush with death and a prolonged convalescence with the Sisters of Mercy to change Kersho's world view. Developing meditation, concentration, and spirituality to contain his naturally bellicose nature, Kersho became a driven and ambitious explorer and champion of lost causes. Appreciated for his intensity and brilliance if feared for his edgy temper, he is a disruptive force to be reckoned with."
   },
   {
     "id": "30",
@@ -502,7 +532,8 @@
     ],
     "faction": "Vaulters",
     "price": 610,
-    "influence": 2
+    "influence": 2,
+    "description": "With a background in planetary ecology, Raudd nevertheless spent a great deal of time with a weapon in his hands as his specialization on Auriga was the biomes of Necrophage habitats. To this day he still travels fearlessly, if not recklessly, in his unchecked search for knowledge, though some say his time at the Academy improved his common sense and tempered his tendency to act before thinking."
   },
   {
     "id": "31",
@@ -518,6 +549,7 @@
     ],
     "faction": "Vaulters",
     "price": 890,
-    "influence": 4
+    "influence": 4,
+    "description": "A promising young student of mechanisms and mathematics on Auriga, Kata converted to the Community of the Great Orrery after a near-death experience at fifteen when necrotic tissue in her foot almost took her life. The salvaged auto-medic apparatus that amputated the decaying limb and grafted on an artificial foot both saved her life and altered her outlook on the world. From that day, Kata rose to prominence as a fierce champion of the machine, and was a natural choice when it came to developing leaders and experts to survive in the dauntingly technological galaxy beyond their homeworld."
   }
 ]

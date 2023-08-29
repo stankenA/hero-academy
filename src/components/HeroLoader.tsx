@@ -7,8 +7,8 @@ const HeroLoader = () => (
     width={305}
     height={529}
     viewBox="0 0 305 529"
-    backgroundColor="#2b3346"
-    foregroundColor="#203d4c"
+    backgroundColor="#01232b"
+    foregroundColor="#02323d"
   >
     <rect x="2" y="0" rx="26" ry="26" width="279" height="300" />
     <rect x="0" y="320" rx="7" ry="7" width="279" height="31" />

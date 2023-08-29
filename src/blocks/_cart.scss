@@ -417,6 +417,7 @@
   &__empty-img {
     display: block;
     width: 40%;
+    min-height: 220px;
     border-radius: 25px;
 
     @media screen and (max-width: 1023px) {

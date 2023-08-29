@@ -36,7 +36,7 @@ export default function Header() {
           </p>
         </div>
       </NavLink>
-      {location.pathname !== '/cart' && (
+      {location.pathname === '/' && (
         <>
           <Search />
           <NavLink to="/cart" className="header__cart">
