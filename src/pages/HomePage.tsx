@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 // import { setFilters } from '../redux/slices/filterSlice';
 // import qs from 'qs';
 
-import Factions from '../components/Factions';
-import Sort from '../components/Sort';
+import { Factions } from '../components/Factions';
+import { Sort } from '../components/Sort';
 import HeroLoader from '../components/HeroLoader';
 import Hero from '../components/Hero';
 

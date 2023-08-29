@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { factionsArr } from '../utils/constants';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedFaction } from '../redux/slices/filterSlice';
 import { RootState } from '../redux/store';
 
-export default function Factions() {
+export const Factions = memo(function Factions() {
 
   const dispatch = useDispatch();
   const selectedFaction = useSelector((state: RootState) => state.filter.selectedFaction);
@@ -27,4 +27,4 @@ export default function Factions() {
       ))}
     </ul>
   )
-}
+});

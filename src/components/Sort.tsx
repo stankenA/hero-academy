@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { sortArr } from '../utils/constants';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedSort } from '../redux/slices/filterSlice';
 import { RootState } from '../redux/store';
 
-export default function Sort() {
+export const Sort = memo(function Sort() {
 
   const dispatch = useDispatch();
   const selectedSort = useSelector((state: RootState) => state.filter.selectedSort);
@@ -34,4 +34,4 @@ export default function Sort() {
       </ul>
     </div>
   )
-}
+})
