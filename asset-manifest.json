@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hero-academy/static/css/main.f2f057b3.css",
+    "main.css": "/hero-academy/static/css/main.70689730.css",
     "main.js": "/hero-academy/static/js/main.9466f3f3.js",
     "static/js/292.a336cc5a.chunk.js": "/hero-academy/static/js/292.a336cc5a.chunk.js",
     "static/js/221.eae9778a.chunk.js": "/hero-academy/static/js/221.eae9778a.chunk.js",
@@ -11,14 +11,14 @@
     "static/media/trash-icon.svg": "/hero-academy/static/media/trash-icon.2fd36539fe3341675649.svg",
     "index.html": "/hero-academy/index.html",
     "static/media/plus-white.svg": "/hero-academy/static/media/plus-white.5c7a3ca30cd6b6ca749f.svg",
-    "main.f2f057b3.css.map": "/hero-academy/static/css/main.f2f057b3.css.map",
+    "main.70689730.css.map": "/hero-academy/static/css/main.70689730.css.map",
     "main.9466f3f3.js.map": "/hero-academy/static/js/main.9466f3f3.js.map",
     "292.a336cc5a.chunk.js.map": "/hero-academy/static/js/292.a336cc5a.chunk.js.map",
     "221.eae9778a.chunk.js.map": "/hero-academy/static/js/221.eae9778a.chunk.js.map",
     "253.1770f630.chunk.js.map": "/hero-academy/static/js/253.1770f630.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2f057b3.css",
+    "static/css/main.70689730.css",
     "static/js/main.9466f3f3.js"
   ]
 }
