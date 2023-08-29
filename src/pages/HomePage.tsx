@@ -13,6 +13,7 @@ import { useSelector } from 'react-redux';
 
 import { fetchHeroes } from '../redux/heroes/asyncActions';
 import { RootState, useAppDispatch } from '../redux/store';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 export default function HomePage() {
 

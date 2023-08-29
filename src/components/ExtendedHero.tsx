@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import LoadingSpinner from './LoadingSpinner';
 
 export default function ExtendedHero() {
 
@@ -24,7 +25,7 @@ export default function ExtendedHero() {
   }, []);
 
   if (!hero) {
-    return <h2 className="hero-full__title">Loading hero...</h2>
+    return <LoadingSpinner txt="Loading hero..." />
   }
 
   return (
