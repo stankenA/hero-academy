@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhero_market=self.webpackChunkhero_market||[]).push([[221],{9221:function(n,e,t){t.r(e),t.d(e,{default:function(){return s}});var r=t(184);function u(){return(0,r.jsx)("section",{className:"not-found",children:(0,r.jsx)("h1",{className:"not-found__title",children:"Page not found"})})}function s(){return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)(u,{})})}}}]);
-//# sourceMappingURL=221.eae9778a.chunk.js.map
