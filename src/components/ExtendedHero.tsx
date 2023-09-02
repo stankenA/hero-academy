@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import LoadingSpinner from './LoadingSpinner';
 import { heroTypes } from '../utils/constants';
+import { TExtendedHeroItem } from '../utils/types/componentsTypes';
 
-export default function ExtendedHero() {
+const ExtendedHero: FC = () => {
 
   const factionColors: Record<string, string> = {
     'United Empire': '#c23336',
@@ -18,14 +19,7 @@ export default function ExtendedHero() {
     'Vaulters': '#613785',
   };
 
-  const [hero, setHero] = useState<{
-    name: string,
-    heroImage: string,
-    faction: string,
-    influence: number,
-    types: number[],
-    description: string,
-  }>();
+  const [hero, setHero] = useState<TExtendedHeroItem | undefined>();
 
   console.log(hero);
 
@@ -108,3 +102,5 @@ export default function ExtendedHero() {
     </section>
   )
 }
+
+export default ExtendedHero;

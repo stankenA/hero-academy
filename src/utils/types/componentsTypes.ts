@@ -7,6 +7,15 @@ export type THeroComponentProps = {
   id: string,
 };
 
+export type TExtendedHeroItem = {
+  name: string,
+  heroImage: string,
+  faction: string,
+  influence: number,
+  types: number[],
+  description: string,
+}
+
 export type TCartItemComponentProps = {
   id: string,
   name: string,

@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -7,7 +8,7 @@ import { selectCart } from '../redux/cart/selectors';
 import CartEmpty from '../components/CartEmpty';
 import { RootState } from '../redux/store';
 
-export default function CartPage() {
+const CartPage: FC = () => {
 
   const dispatch = useDispatch();
   const { items } = useSelector((state: RootState) => state.cart);
@@ -61,4 +62,6 @@ export default function CartPage() {
       </div>
     </section>
   )
-}
+};
+
+export default CartPage;

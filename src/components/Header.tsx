@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, FC } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 
@@ -6,7 +6,7 @@ import galaxy from '../images/Galaxy.svg';
 import Search from './Search';
 import { selectCart } from '../redux/cart/selectors';
 
-export default function Header() {
+const Header: FC = () => {
 
   const location = useLocation();
   const { items, totalPrice } = useSelector(selectCart);
@@ -55,3 +55,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header;

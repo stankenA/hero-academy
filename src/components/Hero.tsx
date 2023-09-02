@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/cart/slice';
@@ -6,7 +6,7 @@ import { heroLvls, heroTypes } from '../utils/constants';
 import { RootState } from '../redux/store';
 import { THeroComponentProps } from '../utils/types/componentsTypes';
 
-export default function Hero({ name, price, heroImage, lvls, types, id }: THeroComponentProps) {
+const Hero: FC<THeroComponentProps> = ({ name, price, heroImage, lvls, types, id }) => {
 
   const dispatch = useDispatch();
 
@@ -86,3 +86,5 @@ export default function Hero({ name, price, heroImage, lvls, types, id }: THeroC
     </li>
   )
 }
+
+export default Hero;

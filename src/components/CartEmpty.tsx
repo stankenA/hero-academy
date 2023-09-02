@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
 import astronaut from '../images/astronaut.jpg';
+import { FC } from 'react';
 
-export default function CartEmpty() {
+const CartEmpty: FC = () => {
   return (
     <div className="cart__empty">
       <h2 className="cart__empty-title">
@@ -19,3 +20,5 @@ export default function CartEmpty() {
     </div>
   )
 }
+
+export default CartEmpty;

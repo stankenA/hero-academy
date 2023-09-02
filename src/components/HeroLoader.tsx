@@ -1,6 +1,7 @@
+import { FC } from 'react';
 import ContentLoader from "react-content-loader";
 
-const HeroLoader = () => (
+const HeroLoader: FC = () => (
   <ContentLoader
     rtl
     speed={2}

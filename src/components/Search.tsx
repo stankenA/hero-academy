@@ -1,11 +1,11 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState, FC } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchValue } from '../redux/filter/slice';
 import debounce from 'lodash.debounce';
 import { RootState } from '../redux/store';
 
-export default function Search() {
+const Search: FC = () => {
 
   const { searchValue } = useSelector((state: RootState) => state.filter);
   const [inputValue, setInputValue] = useState(searchValue);
@@ -50,4 +50,6 @@ export default function Search() {
       }
     </div>
   )
-}
+};
+
+export default Search;

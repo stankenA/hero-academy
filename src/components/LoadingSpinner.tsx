@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-export default function LoadingSpinner({ txt = 'Loading...' }) {
+const LoadingSpinner: FC<{ txt?: string }> = ({ txt = 'Loading...' }) => {
   return (
     <div className="loader">
       <svg className="loader__img" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,4 +11,6 @@ export default function LoadingSpinner({ txt = 'Loading...' }) {
       </p>
     </div>
   )
-}
+};
+
+export default LoadingSpinner;

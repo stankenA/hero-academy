@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 
 // import { useNavigate } from 'react-router-dom';
 // import { setFilters } from '../redux/slices/filterSlice';
@@ -13,9 +13,8 @@ import { useSelector } from 'react-redux';
 
 import { fetchHeroes } from '../redux/heroes/asyncActions';
 import { RootState, useAppDispatch } from '../redux/store';
-import LoadingSpinner from '../components/LoadingSpinner';
 
-export default function HomePage() {
+const HomePage: FC = () => {
 
   // const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -91,4 +90,6 @@ export default function HomePage() {
       </div>
     </section>
   )
-}
+};
+
+export default HomePage;

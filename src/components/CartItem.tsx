@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, FC } from 'react'
 import { useDispatch } from 'react-redux'
 import { addItem, decrementItem, removeItem } from '../redux/cart/slice';
 import { TCartItemComponentProps } from '../utils/types/componentsTypes';
 
-export default function CartItem(heroItem: TCartItemComponentProps) {
+const CartItem: FC<TCartItemComponentProps> = (heroItem) => {
   const dispatch = useDispatch();
   const [isDecrementDisabled, setIsDecrementDisabled] = useState(false);
 
@@ -58,3 +58,5 @@ export default function CartItem(heroItem: TCartItemComponentProps) {
     </li>
   )
 }
+
+export default CartItem;
